@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="merchant_settlement_report" pageWidth="1290" pageHeight="842" columnWidth="1250" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7150eda3-3530-4253-8388-3b82a2ddbba5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="stl_Title_Noborder" hAlign="Center" vAlign="Middle" fontSize="18" isBold="true" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Title_Border" hAlign="Center" vAlign="Middle" fontSize="18" isBold="true" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Out_Border">
+		<box>
+			<topPen lineWidth="1.0"/>
+			<leftPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Out_Border_Left">
+		<box>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Colum_Header" hAlign="Center" vAlign="Middle" fontSize="11" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Left" hAlign="Left" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Left_En" hAlign="Left" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Center" hAlign="Center" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Center_En" hAlign="Center" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Right" hAlign="Right" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Right_En" hAlign="Right" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Left_Text" hAlign="Left" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Left_Text_En" hAlign="Left" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Center_Text" hAlign="Center" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Center_Text_En" hAlign="Center" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Right_Text" hAlign="Right" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Right_Text_En" hAlign="Right" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Left_Note" hAlign="Left" vAlign="Middle" isBlankWhenNull="true" fontSize="10" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Left_Note_En" hAlign="Left" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Center_Note" hAlign="Center" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Center_Note_En" hAlign="Center" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Right_Note" hAlign="Right" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Right_Note_En" hAlign="Right" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Under_Line" hAlign="Center" vAlign="Middle" fontSize="11" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<parameter name="BEGIN_DATE" class="java.lang.String"/>
+	<parameter name="END_DATE" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="MERCHANT_ID" class="java.lang.String"/>
+	<field name="MERCHANT_NAME" class="java.lang.String"/>
+	<field name="CARD_TYPE" class="java.lang.String"/>
+	<field name="CARD_NAME" class="java.lang.String"/>
+	<field name="OL_DEAL_NUM" class="java.lang.Long"/>
+	<field name="OL_DEAL_AMT" class="java.lang.Long"/>
+	<field name="OL_FEE_AMT" class="java.lang.Long"/>
+	<field name="OFL_DEAL_NUM" class="java.lang.Long"/>
+	<field name="OFL_DEAL_AMT" class="java.lang.Long"/>
+	<field name="OFL_FEE_AMT" class="java.lang.Long"/>
+	<field name="TH_NUM" class="java.lang.Long"/>
+	<field name="TH_AMT" class="java.lang.Long"/>
+	<field name="TH_FEE_AMT" class="java.lang.Long"/>
+	<field name="STL_AMT" class="java.lang.Long"/>
+	<variable name="INDEX" class="java.lang.Integer" incrementType="Page" calculation="Count"/>
+	<variable name="OL_DEAL_NUM_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{OL_DEAL_NUM_SUM}.longValue() + $F{OL_DEAL_NUM}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<variable name="OL_DEAL_AMT_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{OL_DEAL_AMT_SUM}.longValue() + $F{OL_DEAL_AMT}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<variable name="OL_FEE_AMT_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{OL_FEE_AMT_SUM}.longValue() + $F{OL_FEE_AMT}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<variable name="OFL_DEAL_NUM_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{OFL_DEAL_NUM_SUM}.longValue() + $F{OFL_DEAL_NUM}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<variable name="OFL_DEAL_AMT_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{OFL_DEAL_AMT_SUM}.longValue() + $F{OFL_DEAL_AMT}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<variable name="OFL_FEE_AMT_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{OFL_FEE_AMT_SUM}.longValue() + $F{OFL_FEE_AMT}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<variable name="TH_NUM_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{TH_NUM_SUM}.longValue() + $F{TH_NUM}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<variable name="TH_AMT_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{TH_AMT_SUM}.longValue() + $F{TH_AMT}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<variable name="TH_FEE_AMT_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{TH_FEE_AMT_SUM}.longValue() + $F{TH_FEE_AMT}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<variable name="STL_AMT_SUM" class="java.lang.Long" incrementType="Report" calculation="Sum">
+		<variableExpression><![CDATA[new java.lang.Long($V{STL_AMT_SUM}.longValue() + $F{STL_AMT}.longValue())]]></variableExpression>
+		<initialValueExpression><![CDATA[new java.lang.Long("0")]]></initialValueExpression>
+	</variable>
+	<group name="MERCHANT_ID">
+		<groupExpression><![CDATA[$F{MERCHANT_ID}]]></groupExpression>
+	</group>
+	<group name="CARD_TYPE">
+		<groupExpression><![CDATA[$F{CARD_TYPE}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="1250" height="50" uuid="45f9f730-3dfa-46a5-aa27-4026ad32ed78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24" isBold="true" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[商户结算报表]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="20" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="80" y="0" width="150" height="20" uuid="452384aa-ed30-45fe-b22e-9c39ce94b3e2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{BEGIN_DATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="20" uuid="73272c44-c805-452b-8312-5ede82675510"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[日期（始）：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="310" y="0" width="150" height="20" uuid="2ec387b6-5fce-4a8a-83a4-8fe17c12150c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{END_DATE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="230" y="0" width="80" height="20" uuid="cbe1d8c1-20b1-44dc-b7f4-897525c9f824"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[日期（终）：]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="1075" y="20" width="75" height="20" uuid="06b4f083-5293-405e-810a-4db3d766a256"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[手续费]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="850" y="0" width="300" height="20" uuid="d8188d1a-a96c-4396-bec7-e0a8d4abdf48"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[退货]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="150" height="40" uuid="63a38d8f-44ee-4023-a7bf-53f75b905aa8"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[商户名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="0" width="300" height="20" uuid="5e4014d5-2107-4faf-9f91-c0249ebfcafc"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[联机账户]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1000" y="20" width="75" height="20" uuid="3631cfca-ea04-46cb-a68f-63681f3275d0"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[结算金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="625" y="20" width="75" height="20" uuid="160ddf13-b7f3-44e4-9e36-f60629323adb"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[交易金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="20" width="75" height="20" uuid="f2dc12d4-c848-45f5-9546-596cbe84c4f7"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[结算金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="925" y="20" width="75" height="20" uuid="ba604937-310d-4f0b-9b26-3a21b5e04018"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[交易金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="550" y="0" width="300" height="20" uuid="3bbb4a4d-945c-49c5-9415-3fea6ff3e668"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[电子钱包]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="850" y="20" width="75" height="20" uuid="c3face22-972c-4001-997e-8d2eb95ea43e"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[交易笔数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="20" width="75" height="20" uuid="050156bf-c137-401b-ba90-b376955c8266"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[结算金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="550" y="20" width="75" height="20" uuid="1ea329db-730c-4d72-9247-310c722b9aca"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[交易笔数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="775" y="20" width="75" height="20" uuid="23537632-e4ee-4ac6-a8d5-e31fb005b815"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[手续费]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="20" width="75" height="20" uuid="2b9ad097-8990-4494-84f0-9afb65b4464d"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[交易笔数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1150" y="0" width="100" height="40" uuid="52655612-2e70-4821-9f7f-62f7b6515e8e"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[合计]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="475" y="20" width="75" height="20" uuid="38c5a02e-04e0-4c76-8b92-1d5f2971801e"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[手续费]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="20" width="75" height="20" uuid="47dca1ec-0ca9-41f0-8c36-6e2ec42d9d28"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[交易金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="0" width="100" height="40" uuid="980f8f8a-f679-4382-8e3c-b7ee4563f7ae"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[卡类型]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement isPrintRepeatedValues="false" x="0" y="0" width="150" height="20" uuid="47aa3420-ba5c-4e66-a8c9-fc0f6dee23e1"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MERCHANT_NAME}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="150" height="20" uuid="c802543f-54db-4099-ab16-785a613cc08a"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="150" y="0" width="100" height="20" uuid="ebfb99f8-1342-43e7-9bc5-4d1adc06d8c4"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CARD_NAME}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="250" y="0" width="75" height="20" uuid="a9ec1810-5773-4f0c-8922-7ce6d6700d00"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OL_DEAL_NUM}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="325" y="0" width="75" height="20" uuid="491afcc9-9539-49bc-8bc7-f772c1537a46"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{OL_DEAL_AMT}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="400" y="0" width="75" height="20" uuid="d3b8f335-07aa-485d-920e-06342b2a2c55"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{OL_DEAL_AMT}.toString()).subtract(new java.math.BigDecimal($F{OL_FEE_AMT}.toString())).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="475" y="0" width="75" height="20" uuid="dafe55a4-e2f5-4720-acc3-f840311ae323"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{OL_FEE_AMT}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="550" y="0" width="75" height="20" uuid="248f1f65-2ac4-441c-915d-5c2a982fcc54"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OFL_DEAL_NUM}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="625" y="0" width="75" height="20" uuid="0a30dbb9-0f5e-403f-b871-a48e1caac105"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{OFL_DEAL_AMT}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="700" y="0" width="75" height="20" uuid="675eda32-dca3-4032-8191-9bd12cb38f4f"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{OFL_DEAL_AMT}.toString()).subtract(new java.math.BigDecimal($F{OFL_FEE_AMT}.toString())).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="775" y="0" width="75" height="20" uuid="da0e4c87-8cdd-427a-85fa-c4e49f585e52"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{OFL_FEE_AMT}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="850" y="0" width="75" height="20" uuid="ea386475-c759-48e0-bfbc-9205ff8e3c4c"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{TH_NUM}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="925" y="0" width="75" height="20" uuid="1f43c451-a677-41ca-af08-70f8c279d828"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{TH_AMT}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1000" y="0" width="75" height="20" uuid="fd31345d-4d51-486c-b9bd-7198bbd1ec60"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{TH_AMT}.toString()).subtract(new java.math.BigDecimal($F{TH_FEE_AMT}.toString())).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1075" y="0" width="75" height="20" uuid="d7ab0d43-48b6-44f7-962d-ddab3d963e3f"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{TH_FEE_AMT}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1150" y="0" width="100" height="20" uuid="e86ec565-7d93-4516-bd84-8e63ab77ec26"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($F{STL_AMT}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement style="stl_Center_Note" x="682" y="0" width="30" height="20" uuid="3b921f14-4d3e-4b94-a96a-5b28028141b1"/>
+				<textElement>
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[页]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Center_Note" x="543" y="0" width="30" height="20" uuid="797bb052-b8e8-4c5b-b70c-c715f89c15b5"/>
+				<textElement>
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[第]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="stl_Center_Note_En" x="573" y="0" width="30" height="20" uuid="acadcd34-d8b7-44b0-be0b-1199f56ace96"/>
+				<textElement textAlignment="Center">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report" pattern="" isBlankWhenNull="false">
+				<reportElement style="stl_Center_Note_En" x="652" y="0" width="30" height="20" uuid="01fd98d6-05da-43cd-bf5a-1c6247ebd122"/>
+				<textElement>
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Center_Note" x="602" y="0" width="50" height="20" uuid="dc00aa3d-b484-4179-aa8a-a48a623595e4"/>
+				<textElement>
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[页，共]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="250" height="20" uuid="f650132b-3ae2-4321-9061-183c9e1a332a"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<text><![CDATA[合计]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="250" y="0" width="75" height="20" uuid="bda7e94d-a782-4582-b488-46b7841f462e"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{OL_DEAL_NUM_SUM}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="325" y="0" width="75" height="20" uuid="174e51a8-e30a-4bee-9449-6c8bf3c67ac8"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{OL_DEAL_AMT_SUM}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="400" y="0" width="75" height="20" uuid="1ecc68f2-bb7d-49d8-bcf1-9c120a9127bf"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{OL_DEAL_AMT_SUM}.toString()).subtract(new java.math.BigDecimal($V{OL_FEE_AMT_SUM}.toString())).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="475" y="0" width="75" height="20" uuid="8fe777c2-43c9-4ad1-abe6-f05bf8230614"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{OL_FEE_AMT_SUM}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="550" y="0" width="75" height="20" uuid="7ab0a825-00b2-4309-b255-a8fd1383875c"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{OFL_DEAL_NUM_SUM}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="625" y="0" width="75" height="20" uuid="4b5fc04e-12f2-4471-b2bd-8d4c6c28d690"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{OFL_DEAL_AMT_SUM}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="700" y="0" width="75" height="20" uuid="87752c41-6f41-46c3-ae18-e60ee88c3aa1"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{OFL_DEAL_AMT_SUM}.toString()).subtract(new java.math.BigDecimal($V{OFL_FEE_AMT_SUM}.toString())).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="775" y="0" width="75" height="20" uuid="ff8083ce-7455-42f5-9dde-4cd86e7185ff"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{OFL_FEE_AMT_SUM}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="850" y="0" width="75" height="20" uuid="a88cab23-2737-40e1-96aa-f50a3a52c720"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{TH_NUM_SUM}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="925" y="0" width="75" height="20" uuid="160df620-9a1f-4d16-aedd-ee61a180f547"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{TH_AMT_SUM}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1000" y="0" width="75" height="20" uuid="a676da84-34c9-4e06-91e2-7f1ce6a4eaab"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{TH_AMT_SUM}.toString()).subtract(new java.math.BigDecimal($V{TH_FEE_AMT_SUM}.toString())).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1075" y="0" width="75" height="20" uuid="f9871f8d-84e4-4cb1-9310-ced78f020308"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{TH_FEE_AMT_SUM}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="1150" y="0" width="100" height="20" uuid="41ab079a-8649-4c25-b7bc-29504a687bf8"/>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.math.BigDecimal($V{STL_AMT_SUM}.toString()).divide(new java.math.BigDecimal(new java.lang.Float("100.00"))).setScale(new java.lang.Integer("2"), java.math.BigDecimal.ROUND_HALF_UP)]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

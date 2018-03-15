@@ -1,0 +1,74 @@
+-- Create table
+create table POINTS_RULE
+(
+  id              NUMBER(16) not null,
+  deal_code       VARCHAR2(8),
+  point_type      VARCHAR2(1),
+  point_gd_value  VARCHAR2(10),
+  point_bl_value  VARCHAR2(10),
+  point_max_value VARCHAR2(10),
+  point_min_value VARCHAR2(10),
+  state           VARCHAR2(1),
+  insert_user     VARCHAR2(12),
+  insert_date     DATE
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table POINTS_RULE
+  is '积分规则表';
+-- Add comments to the columns 
+comment on column POINTS_RULE.id
+  is '主键(seq_points_rule)';
+comment on column POINTS_RULE.deal_code
+  is '交易代码';
+comment on column POINTS_RULE.point_type
+  is '1：固定积分 2：比率积分（界面输入的值要除以10000）';
+comment on column POINTS_RULE.point_gd_value
+  is '类型为固定积分时所填入的值';
+comment on column POINTS_RULE.point_bl_value
+  is '类型为比率积分时所填入的值';
+comment on column POINTS_RULE.point_max_value
+  is '最大积分值';
+comment on column POINTS_RULE.point_min_value
+  is '最小积分值';
+comment on column POINTS_RULE.state
+  is '0正常 1注销';
+comment on column POINTS_RULE.insert_user
+  is '插入柜员';
+comment on column POINTS_RULE.insert_date
+  is '插入时间';
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table POINTS_RULE
+  add constraint PK_POINTS_RULE primary key (ID)
+  using index 
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+
+  
+  
+  
+  
+-- Create sequence 
+create sequence SEQ_POINTS_RULE
+minvalue 1
+maxvalue 99999999999
+start with 24
+increment by 1
+cache 20;

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd
+	http://xmlns.oracle.com/weblogic/weblogic-web-app
+	http://xmlns.oracle.com/weblogic/weblogic-web-app/1.2/weblogic-web-app.xsd">
+	<context-root>/</context-root>
+	<description>eracloud_jx</description>
+	<weblogic-version>10.3.8</weblogic-version>
+    <jsp-descriptor>
+    	<page-check-seconds>30</page-check-seconds>
+    	<precompile>true</precompile>
+    	<precompile-continue>true</precompile-continue>
+    	<encoding>UTF-8</encoding>
+    </jsp-descriptor>
+    <container-descriptor>
+    	<filter-dispatched-requests-enabled>true</filter-dispatched-requests-enabled>
+	    <servlet-reload-check-secs>30</servlet-reload-check-secs>
+	    <resource-reload-check-secs>30</resource-reload-check-secs>
+	    <single-threaded-servlet-pool-size>30</single-threaded-servlet-pool-size>
+	  	<prefer-application-packages>
+	    	<!-- <package-name>javax.servlet.*</package-name> -->
+	    	<package-name>org.apache.*</package-name>
+	        <package-name>org.apache.xmlbeans.*</package-name>
+	        <package-name>antlr.*</package-name>
+	        <package-name>javax.persistence.*</package-name>
+	        <package-name>org.hibernate.*</package-name>			
+	    </prefer-application-packages>
+    </container-descriptor>
+</weblogic-web-app>

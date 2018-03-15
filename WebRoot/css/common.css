@@ -1,0 +1,145 @@
+@CHARSET "UTF-8";
+.well-small {
+    border-radius: 3px 3px 3px 3px;
+    padding: 9px;
+}
+.well {
+    border: 1px solid #E3E3E3;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 5px;
+    min-height: 20px;
+    padding: 5px;
+    height:auto;overflow:hidden;
+    margin-left:0px;margin-right:0px;margin-top: 2px;margin-bottom:2px;
+}
+.badge {
+	background-color: #B94A48;
+    border-radius: 3px 3px 3px 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 2px 4px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+.label-info{
+    background-color: #3A87AD;
+    border-radius: 3px 3px 3px 3px;
+	color: #FFFFFF;
+    display: inline-block;
+    font-size: 11.844px;
+    font-weight: bold;
+    line-height: 14px;
+    padding: 2px 4px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+.unsupported-browser{
+	width:100%;
+	left: 0;
+	top: 0;
+	margin:0px;
+	display:none;
+	position: fixed;
+	z-index: 10000;
+	background-color: #F5F5F5;
+    border: 1px solid #E3E3E3;
+    color: #393939;
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 18px;
+  		padding: 8px 35px 8px 14px;
+  		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.title_header{
+	background:#ebf0ef url(/images/ico_jt_r.gif) no-repeat left center;
+	width:13px;
+}
+.easyui-textbox{
+	height: 18px;
+	width: 170px;
+	line-height: 16px;
+    /*border-radius: 3px 3px 3px 3px;*/
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+.messager-body div{
+	word-break:break-all;
+}
+/**定义文本框获取焦点时的有特效*/
+textarea:focus, input[type="text"]:focus,input:focus,.combo:focus{
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+    outline: 0 none;
+}
+table {
+   background-color: transparent;
+   border-collapse: collapse;
+   border-spacing: 0;
+   max-width: 100%;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #E5E5E5;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    color: #999999;
+    line-height: 20px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 100%;
+}
+/**文本域字体大小 正常*/
+input, textarea,select,textarea {
+    font-weight: normal;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+/**下拉框鼠标状态*/
+.combobox-item{
+		cursor:pointer;
+}
+/**
+表格定义
+例子:
+<table class="tablegrid">
+	<tr>
+		<td class="tableleft">表格左边</td>
+		<td class="tableright">表格右边</td>
+	</tr>
+</table>
+*/
+.tableleft{text-align:right;padding-right:5px;height:30px;font-weight:400;vertical-align:middle;line-height:150%;}
+.tableright{text-align:left;padding-left:5px;height:30px;vertical-align:middle;line-height:150%;}
+.tablegrid ,.tablegrid td,.tablegrid th{border:1px dotted rgb(149, 184, 231);vertical-align:middle;}
+.tablegrid{border-left:none;border-right:none;vertical-align:middle;width:100%}
+.subtitle{
+	background-position:left center; 
+	background-image:url(/extend/fromedit.png);
+	background-repeat:no-repeat;
+	margin:0;padding:5px 0;
+	line-height:100%;
+	text-align:left;
+	font-weight:500;padding-left:17px;
+	font-size:12px;color:#777;
+	border-width:1px;border-style:solid;border-color:#E5E5E5;
+}
+

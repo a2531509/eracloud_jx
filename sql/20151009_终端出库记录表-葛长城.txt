@@ -1,0 +1,89 @@
+-- Create sequence 
+create sequence SEQ_BASE_END_OUT
+minvalue 1
+maxvalue 9999999999999999
+start with 1
+increment by 1
+cache 10;
+
+
+
+-- Create table
+create table BASE_END_OUT
+(
+  end_out_id      NUMBER(20) not null,
+  out_id          VARCHAR2(10),
+  out_date        VARCHAR2(10),
+  seller_name     VARCHAR2(30),
+  seller_mobile   VARCHAR2(11),
+  seller_linkman  VARCHAR2(10),
+  out_no          VARCHAR2(30),
+  out_goods_state CHAR(1),
+  user_id         VARCHAR2(10),
+  oper_time       DATE,
+  note            VARCHAR2(100)
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table BASE_END_OUT
+  is '终端出库信息表';
+-- Add comments to the columns 
+comment on column BASE_END_OUT.end_out_id
+  is '序列号';
+comment on column BASE_END_OUT.out_id
+  is '编号(终端编号，PSAM卡编号等)';
+comment on column BASE_END_OUT.out_date
+  is '出库时间';
+comment on column BASE_END_OUT.seller_name
+  is '卖家名称';
+comment on column BASE_END_OUT.seller_mobile
+  is '卖家手机号';
+comment on column BASE_END_OUT.seller_linkman
+  is '卖家联系人';
+comment on column BASE_END_OUT.out_no
+  is '出库单号';
+comment on column BASE_END_OUT.out_goods_state
+  is '货款情况1-已开具发票,款已付清,2-已开具发票,但款未付清；3-未开具发票,未付款';
+comment on column BASE_END_OUT.user_id
+  is '操作员编号';
+comment on column BASE_END_OUT.oper_time
+  is '操作时间';
+comment on column BASE_END_OUT.note
+  is '备注';
+-- Create/Recreate indexes 
+create index INDEX_OUT_ID on BASE_END_OUT (OUT_ID)
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table BASE_END_OUT
+  add constraint PK_END_OUT_ID_PKS primary key (END_OUT_ID)
+  using index 
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+
+

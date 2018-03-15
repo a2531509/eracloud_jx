@@ -1,0 +1,29 @@
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='设备管理' and rownum=1   ), '卡片档案管理', null, 2, 'cardProduct', 'F', 'Y', 'closed', '/jsp/cardProduct/cardProduct.jsp', 'icon-cardService', 'A', null, to_date('19-09-2015 14:01:45', 'dd-mm-yyyy hh24:mi:ss'), to_date('19-09-2015 14:01:45', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='柜面服务' and rownum=1   ), '充值卡管理', null, 9, 'rechageCardManage', 'F', 'Y', 'closed', 'javascript:void(0);', 'icon-cardService', 'A', null, to_date('20-09-2015', 'dd-mm-yyyy'), to_date('20-09-2015 20:48:09', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='充值卡管理' and rownum=1   ), '充值卡销售', null, 1, 'rechargeCard', 'F', 'Y', 'closed', '/jsp/rechargeCard/rechargeCardSell.jsp', 'icon-dzqbcz', 'A', null, to_date('20-09-2015 20:49:46', 'dd-mm-yyyy hh24:mi:ss'), to_date('20-09-2015 20:49:46', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='充值卡销售' and rownum=1   ), '充值卡销售保存', null, 1, 'rechargeCardSellSave', 'O', 'Y', 'open', 'javascript:void(0);', 'icon-save', 'A', null, to_date('20-09-2015 20:51:31', 'dd-mm-yyyy hh24:mi:ss'), to_date('20-09-2015 20:51:31', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='充值卡管理' and rownum=1   ), '批量销售登记', null, 2, 'rechargeCardBatchSell', 'F', 'Y', 'closed', '/jsp/rechargeCard/rechargeCardBatchSell.jsp', 'icon-orgBranchAccoutManage', 'A', null, to_date('20-09-2015 20:53:50', 'dd-mm-yyyy hh24:mi:ss'), to_date('20-09-2015 20:53:50', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='充值卡管理' and rownum=1   ), '充值卡批量启用', null, 3, 'rechargeCardUsed', 'F', 'Y', 'closed', '/jsp/rechargeCard/rechargeCardUsed.jsp', 'icon-paraManage', 'A', null, to_date('20-09-2015 20:55:58', 'dd-mm-yyyy hh24:mi:ss'), to_date('20-09-2015 20:55:58', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='充值卡管理' and rownum=1   ), '销售撤销', '', 4, 'rechargeCardBack', 'F', 'Y', 'closed', '/jsp/rechargeCard/rechargeCardBack.jsp', 'icon-merchantErr', 'A', null, to_date('20-09-2015', 'dd-mm-yyyy'), to_date('20-09-2015 21:00:13', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval,(SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='批量销售登记' and rownum=1   ), '批量销售登记保存', null, 1, 'rechargeCardBatchSellSave', 'O', 'Y', 'open', 'javascript:void(0);', 'icon-save', 'A', null, to_date('20-09-2015', 'dd-mm-yyyy'), to_date('20-09-2015 21:53:16', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='充值卡批量启用' and rownum=1   ), '批量启用保存', null, 1, 'rechargeCardUsedSave', 'O', 'Y', 'open', 'javascrit:void(0);', 'icon-save', 'A', null, to_date('20-09-2015 21:54:39', 'dd-mm-yyyy hh24:mi:ss'), to_date('20-09-2015 21:54:39', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='销售撤销' and rownum=1   ), '销售撤销保存', null, 1, 'rechargeCardBackSave', 'O', 'Y', 'open', 'javascript:void(0);', 'icon-save', 'A', null, to_date('20-09-2015 21:56:02', 'dd-mm-yyyy hh24:mi:ss'), to_date('20-09-2015 21:56:02', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);

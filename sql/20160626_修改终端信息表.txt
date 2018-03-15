@@ -1,0 +1,2 @@
+-- Add/modify columns 
+alter table BASE_TAG_END modify END_NAME VARCHAR2(100);

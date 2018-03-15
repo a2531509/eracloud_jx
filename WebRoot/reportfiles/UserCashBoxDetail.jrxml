@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="UserCashBoxDetail" pageWidth="660" pageHeight="842" columnWidth="580" leftMargin="40" rightMargin="40" topMargin="40" bottomMargin="40" uuid="1789b743-0fc5-4537-b713-8531e8fddcf3">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="title" class="java.lang.String"/>
+	<parameter name="curUserId" class="java.lang.String"/>
+	<parameter name="curUserName" class="java.lang.String"/>
+	<parameter name="curRcAmt" class="java.lang.String"/>
+	<parameter name="curBhkAmt" class="java.lang.String"/>
+	<parameter name="curTlAmt" class="java.lang.String"/>
+	<field name="userId" class="java.lang.String"/>
+	<field name="userName" class="java.lang.String"/>
+	<field name="rcAmt" class="java.lang.String"/>
+	<field name="bhkAmt" class="java.lang.String"/>
+	<field name="tlAmt" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="580" height="40" uuid="8569eb94-990b-43c8-9f30-038100c79fa9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="110" height="20" uuid="b3f8c2fb-2580-41bd-9a7b-c99d848fc2dc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="110" y="0" width="110" height="20" uuid="cfac7c01-ddce-4c12-b0f5-8b34abe693cd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="220" y="0" width="110" height="20" uuid="eaf39058-f3f8-4fc6-8488-a4b07d0c9ec4"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="330" y="0" width="110" height="20" uuid="cfe9a682-5484-4d3b-b9cb-8a6dc668e24b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="440" y="0" width="140" height="20" uuid="7e749041-db55-46c2-bbe6-00e535a33bfe"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="110" height="20" uuid="36d00626-762c-4b46-bf7c-1a108b351651"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[柜员编号]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="110" height="20" uuid="62642d35-4154-41be-83bc-1d65e8fe45f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[柜员姓名]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="110" height="20" uuid="f7bac9d1-875d-49d9-b849-932aeb93429e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[充值金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="110" height="20" uuid="ac1f06cf-932f-4be8-8ab4-86fe51562c9f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[补换卡金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="140" height="20" uuid="c25c1311-896f-4e6c-9741-d299bd9f1226"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[总计]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="110" height="20" uuid="fc53b575-1810-4afa-ac03-fb5596744a22"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="110" y="0" width="110" height="20" uuid="22f16dd4-41e4-48e1-bcdc-8d8e8ad733be"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="220" y="0" width="110" height="20" uuid="85214e93-edd4-45f2-9f1d-f9f45b9addf6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="330" y="0" width="110" height="20" uuid="63fcd5bb-2dfb-44d3-8701-a6c63c4d0a7f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="440" y="0" width="140" height="20" uuid="083c4ae0-9754-467f-b511-300603bcf806"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="110" height="20" uuid="7bde7d83-8016-426f-a9f2-1cae5570feae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{userId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="110" height="20" uuid="e85a4e94-2c56-4d61-a24b-f8c808e8c240"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{userName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="110" height="20" uuid="43259fc6-aa33-48f2-9f05-8ad844beb328"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{bhkAmt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="140" height="20" uuid="6cee1fd3-bbee-48f1-9901-aef16968ecac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tlAmt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="109" height="20" uuid="e18e4141-b715-4322-aad3-5910f271a4d9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{rcAmt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="221" y="0" width="65" height="20" uuid="97615fa7-7f91-4124-9b06-753f2bf7b755"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="296" y="0" width="65" height="20" uuid="27797061-808f-4615-a74b-0f46659c5514"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="286" y="0" width="10" height="20" uuid="bc4d4a93-4c45-4893-94e3-a22f8c416d77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[/]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="221" height="20" uuid="b6788dba-de32-43af-9e87-18f568dabe68"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="220" y="0" width="110" height="20" uuid="9309f237-2251-4625-aad7-ca51a3afca4f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="330" y="0" width="110" height="20" uuid="7b5432a9-c5fa-4f96-ad44-77b7d46e79fe"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="440" y="0" width="140" height="20" uuid="30566fe9-12b1-4b51-88f0-c219b47eb667"/>
+			</rectangle>
+			<textField>
+				<reportElement x="221" y="0" width="109" height="20" uuid="4e6a7eed-786a-41c3-955b-0eaa65062431"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{curRcAmt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="110" height="20" uuid="5386debc-644b-440a-9291-f3b05b397433"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{curBhkAmt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="140" height="20" uuid="a4c5d62d-df52-4c1e-ba8a-06a7b484c095"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{curTlAmt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="220" height="20" uuid="1f0abd62-500a-4340-be82-9005773757ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[总计]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

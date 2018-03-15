@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+                        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+                        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+	<!-- 配置JOB -->
+	<bean id="offlinedataJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject" ref="offlineDataProcessTask"/>
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+		<property name="group" value="offlinedatajobgroup" />
+		<property name="name" value="offlinedatajob" />
+	</bean>
+	
+	<!-- 配置定时-->
+	<bean name="offlinedataCron" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="offlinedataJob"/>
+		<property name="cronExpression" value="0 */1 * * * ?"/> 
+	</bean>
+	<!-- 配置日终处理JOB -->
+	<bean id="cuteDayJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject" ref="cuteDayTask"/>
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<!-- 配置日终之后处理脱机返回文件定时--> 
+	<bean name="cuteDayCron" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="cuteDayJob"/>
+		<property name="cronExpression" value="0 00 01 * * ?"/><!-- 晚上01点执行一次 -->
+	</bean>
+	
+	 <!-- 调度 -->
+	<bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<!-- 卡管定时 -->
+				<!-- <ref bean="cuteDayCron"/>  
+			    <ref bean="createCardNoCron"/> -->
+			    <!-- 导入银行审核文件 -->
+			    <ref bean="importBankFileCron"/>
+			    <!-- 导入合作机构对账文件 -->
+			    <ref bean="coOrgAutoCheckFileCron"/>
+			    <!-- 互联互通数据处理 -->
+			    <ref bean="hlhtFileCorn"/>
+			    
+			    <!-- 其它定时 -->
+			    <!-- 自行车开通文件/黑名单处理 -->
+				<ref bean="offlinedataCron"/>
+				<!-- 发送省厅数据 -->
+			    <ref bean="stDataSwitchCorn"/>
+			    <!-- 省厅对账 -->
+			    <ref bean="stDataSwitchCorn2"/>
+			</list>
+		</property>
+	</bean>
+	<!-- 生成卡号 -->
+	<!-- 配置生成卡号的处理JOB -->
+	<bean id="createCardNoJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject" ref="createCardNoTask"/>
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+		<property name="group" value="createCardNogroup" />
+		<property name="name" value="createCardNojob" />
+	</bean>
+	
+    <!-- 配置生成卡号处理定时-->
+	<bean name="createCardNoCron" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="createCardNoJob"/>
+		<property name="cronExpression" value="0 57 03 * * ?"/>
+	</bean>
+	
+	<!-- 配置导入银行审核文件JOB -->
+	<bean id="importBankFileJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject" ref="importBankFileTask"/>
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<!-- 配置导入银行审核文件定时--> 
+	<bean name="importBankFileCron" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="importBankFileJob"/>
+		<property name="cronExpression" value="0 0,30 * * * ?"/>
+	</bean>
+	
+	<!-- 配置导入合作机构对账文件JOB -->
+	<bean id="coOrgAutoCheckFileJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject" ref="coOrgAutoCheckFileTask"/>
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<!-- 配置导入合作机构对账文件定时--> 
+	<bean name="coOrgAutoCheckFileCron" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="coOrgAutoCheckFileJob"/>
+		<property name="cronExpression" value="0 57 15 * * ?"/>
+	</bean>
+	
+	<!-- 配置互联互通JOB -->
+	<bean id="hlhtFileJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject" ref="offlineHlhtTask"/>
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<!-- 配置互联互通定时--> 
+	<bean name="hlhtFileCorn" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="hlhtFileJob"/>
+		<property name="cronExpression" value="0 08 15 * * ?"/>
+	</bean>
+	
+	<!-- 配置导入合作机构对账文件JOB -->
+	<bean id="stDataSwitchJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject" ref="switchTask"/>
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<!-- 配置导入合作机构对账文件定时--> 
+	<bean name="stDataSwitchCorn" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="stDataSwitchJob"/>
+		<property name="cronExpression" value="0 20 18 * * ?"/>
+	</bean>
+	<!-- 省厅2 -->
+	<bean id="stDataSwitchJob2" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+	    <property name="targetObject" ref="switchTask2"/>
+		<property name="targetMethod" value="execute" />
+		<property name="concurrent" value="false" />
+	</bean>
+
+	<!-- 省厅2 --> 
+	<bean name="stDataSwitchCorn2" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="stDataSwitchJob2"/>
+		<property name="cronExpression" value="0 30 0 * * ?"/>
+	</bean>
+	
+</beans>

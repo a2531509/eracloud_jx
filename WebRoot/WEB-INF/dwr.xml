@@ -1,0 +1,24 @@
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://directwebremoting.org/schema/dwr30.dtd">
+
+<dwr>
+ 
+  <!-- without allow, DWR isn't allowed to do anything -->
+  <allow>
+    <create creator="spring"  javascript="imgDeal" scope="page"> 
+		<param name="beanName" value= "fileDealDwr" />
+	</create>
+	<create creator="spring"  javascript="commonDwr" scope="page"> 
+		<param name="beanName" value= "commonDwr" />
+	</create>
+  </allow>
+
+  <!-- you may need to tell DWR about method signatures -->
+  <signatures>
+        <![CDATA[
+        import java.util.Map;
+        ]]>
+   </signatures>
+
+</dwr>

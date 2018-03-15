@@ -1,0 +1,123 @@
+drop table SYS_SMESSAGES;
+-- Create table
+create table SYS_SMESSAGES
+(
+  sms_no    NUMBER(38) not null,
+  sms_type  VARCHAR2(2) not null,
+  client_id VARCHAR2(10),
+  card_no   VARCHAR2(20),
+  mobile_no VARCHAR2(20) not null,
+  content   VARCHAR2(512) not null,
+  rtn_state VARCHAR2(10),
+  sms_state CHAR(1) default 0,
+  send_time VARCHAR2(20),
+  oper_id   VARCHAR2(10),
+  deal_code NUMBER(8),
+  action_no NUMBER(38),
+  time      VARCHAR2(20) default to_char(sysdate,'yyyy-mm-dd mm:mi:ss'),
+  mid       VARCHAR2(256),
+  note      VARCHAR2(512)
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255;
+-- Add comments to the table 
+comment on table SYS_SMESSAGES
+  is '短信信息表';
+-- Add comments to the columns 
+comment on column SYS_SMESSAGES.sms_no
+  is '短信ID，自动增加SEQ_SYS_SMESSAGES';
+comment on column SYS_SMESSAGES.sms_type
+  is '短信类型 01发放，02充值，03消费，04圈存，05密码服务，06挂失,07解挂,08其他卡服务，99自定义短信';
+comment on column SYS_SMESSAGES.client_id
+  is '客户编号：关联客户信息';
+comment on column SYS_SMESSAGES.card_no
+  is '卡号';
+comment on column SYS_SMESSAGES.mobile_no
+  is '电话号码：取自bs_person.MOBILE_NO手机号码或调用者传入';
+comment on column SYS_SMESSAGES.content
+  is '短信内容';
+comment on column SYS_SMESSAGES.rtn_state
+  is '短信接口返回码：一般0表示成功，其它表示失败，详见各地短信接口文档';
+comment on column SYS_SMESSAGES.sms_state
+  is '短信状态 0未发送 1已发送 2发送成功 3发送失败';
+comment on column SYS_SMESSAGES.send_time
+  is '发送时间: yyyy-mm-dd mm:mi:ss';
+comment on column SYS_SMESSAGES.oper_id
+  is '柜员编号：自定义短信有用';
+comment on column SYS_SMESSAGES.deal_code
+  is '交易代码：区分什么交易产生的短信';
+comment on column SYS_SMESSAGES.action_no
+  is '业务流水号：关联业务表记录';
+comment on column SYS_SMESSAGES.time
+  is '短信生成时间：默认数据库系统时间';
+comment on column SYS_SMESSAGES.mid
+  is '短信网关对应的消息id，提交到网关时回写，用于获取短信发送状态';
+comment on column SYS_SMESSAGES.note
+  is '备注';
+-- Create/Recreate indexes 
+create index IDX_SYS_SMESSAGES_1 on SYS_SMESSAGES (SMS_STATE, TIME)
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255;
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table SYS_SMESSAGES
+  add constraint PK_SYS_SMESSAGES primary key (SMS_NO)
+  using index 
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255;
+
+
+
+drop table SYS_SMESSAGES_PARA;
+
+-- Create table
+create table SYS_SMESSAGES_PARA
+(
+  deal_code NUMBER(8) not null,
+  isfixed   VARCHAR2(1) default 0,
+  content   VARCHAR2(512),
+  state     VARCHAR2(1) default 0
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255;
+-- Add comments to the table 
+comment on table SYS_SMESSAGES_PARA
+  is '短信参数配置表';
+-- Add comments to the columns 
+comment on column SYS_SMESSAGES_PARA.deal_code
+  is '交易代码：业务操作时根据此表中是否有该业务的交易代码，来判断是否要插入到短信信息表';
+comment on column SYS_SMESSAGES_PARA.isfixed
+  is '是否采用固定短语：0是1否';
+comment on column SYS_SMESSAGES_PARA.content
+  is '固定短信内容，如果采用固定固定短语，则从此获得短信内容';
+comment on column SYS_SMESSAGES_PARA.state
+  is '有效标志(0有效1无效)';
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table SYS_SMESSAGES_PARA
+  add constraint PK_TR_CODE primary key (DEAL_CODE)
+  using index 
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255;
+
+
+
+
+
+-- Create sequence 
+create sequence SEQ_SYS_SMESSAGES
+minvalue 1
+maxvalue 9999999999999999999
+start with 1
+increment by 1
+cache 10
+order;
+

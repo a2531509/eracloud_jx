@@ -1,0 +1,11 @@
+-- Add/modify columns 
+alter table CARD_SALE_REC add agt_name VARCHAR2(20);
+alter table CARD_SALE_REC add agt_tel_no VARCHAR2(11);
+alter table CARD_SALE_REC add agt_cert_no VARCHAR2(18);
+-- Add comments to the columns 
+comment on column CARD_SALE_REC.agt_name
+  is '客户姓名';
+comment on column CARD_SALE_REC.agt_tel_no
+  is '客户电话';
+comment on column CARD_SALE_REC.agt_cert_no
+  is '证件号码';

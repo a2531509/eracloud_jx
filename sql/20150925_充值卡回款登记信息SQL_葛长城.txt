@@ -1,0 +1,92 @@
+-- Create sequence 
+create sequence SEQ_PAY_BAT_ID
+minvalue 1
+maxvalue 999999999999999999
+start with 1
+increment by 1
+cache 20
+order;
+
+
+
+
+-- Create table
+create table CARD_SALE_BOOK
+(
+  pay_bat_id    NUMBER(38) not null,
+  pay_date      DATE,
+  pay_amt       NUMBER(16),
+  pay_way       CHAR(1),
+  bank_sheet_no VARCHAR2(10),
+  bank_id       VARCHAR2(4),
+  save_date     VARCHAR2(10),
+  stl_date      VARCHAR2(10),
+  oper_id       VARCHAR2(8),
+  pay_state     CHAR(1),
+  state         CHAR(1),
+  deal_no       NUMBER(16)
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table CARD_SALE_BOOK
+  is '销售回款登记信息';
+-- Add comments to the columns 
+comment on column CARD_SALE_BOOK.pay_bat_id
+  is '付款批次';
+comment on column CARD_SALE_BOOK.pay_date
+  is '支付日期';
+comment on column CARD_SALE_BOOK.pay_amt
+  is '支付金额';
+comment on column CARD_SALE_BOOK.pay_way
+  is '支付方式1-现金 2-汇款 3-支票';
+comment on column CARD_SALE_BOOK.bank_sheet_no
+  is '银行票据支票或汇款单号码';
+comment on column CARD_SALE_BOOK.bank_id
+  is '结算银行';
+comment on column CARD_SALE_BOOK.save_date
+  is '缴存日期';
+comment on column CARD_SALE_BOOK.stl_date
+  is '结算日期';
+comment on column CARD_SALE_BOOK.oper_id
+  is '登记人';
+comment on column CARD_SALE_BOOK.pay_state
+  is '支付状态0-未付1-已支付4-已缴款4-已入帐，8部分支付，9完全支付';
+comment on column CARD_SALE_BOOK.state
+  is '状态0-正常 1-撤销';
+comment on column CARD_SALE_BOOK.deal_no
+  is '销售流水号';
+-- Create/Recreate indexes 
+create index INDEX_DEAL_NO_INDEXS01 on CARD_SALE_BOOK (DEAL_NO)
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table CARD_SALE_BOOK
+  add constraint PK_PAY_BAT_ID_PKS primary key (PAY_BAT_ID)
+  using index 
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );

@@ -1,0 +1,2 @@
+-- Add/modify columns 
+alter table BASE_MERCHANT modify BANK_ACC_NO VARCHAR2(50);

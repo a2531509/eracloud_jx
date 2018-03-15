@@ -1,0 +1,2 @@
+insert into sys_permission (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (select a.PERMISSION_ID from sys_permission a where a.name = '系统营业报表'), '营业报表查询', '系统营业报表', 1, 'queryReport', 'F', 'Y', 'closed', 'jsp/cuteDayManage/queryCuteRp.jsp', 'icon-comp', 'A', '营业报表查询', to_date('16-09-2015 19:24:55', 'dd-mm-yyyy hh24:mi:ss'), to_date('16-09-2015 19:24:55', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);

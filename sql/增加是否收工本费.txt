@@ -1,0 +1,1 @@
+alter table CARD_CONFIG rename column cost_flag to COST_FLAG;

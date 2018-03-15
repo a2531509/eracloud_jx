@@ -1,0 +1,35 @@
+-- Add/modify columns 
+alter table CARD_APPLY add org_id varchar2(10);
+-- Add comments to the columns 
+comment on column CARD_APPLY.org_id 
+  is '机构编号';
+  
+  
+  
+ -- Add/modify columns 
+alter table CARD_TASK_LIST add HLHT_FLAG varchar2(2);
+alter table CARD_TASK_LIST add SUB_CARD_NO varchar2(10);
+alter table CARD_TASK_LIST add TOUCH_STARTDATE varchar2(10);
+alter table CARD_TASK_LIST add TOUCH_VALIDDATE varchar2(10);
+-- Add comments to the columns 
+comment on column CARD_TASK_LIST.HLHT_FLAG 
+  is '互联互通标识';
+comment on column CARD_TASK_LIST.SUB_CARD_NO 
+  is '社保卡号';
+comment on column CARD_TASK_LIST.TOUCH_STARTDATE 
+  is '接触卡发卡日期';
+comment on column CARD_TASK_LIST.TOUCH_VALIDDATE
+  is '接触卡卡有效期';
+  
+  
+  
+  
+  -- Add/modify columns 
+alter table CARD_CONFIG add cost_fee NUMBER(10);
+alter table CARD_CONFIG add foregift NUMBER(10);
+
+-- Add comments to the columns 
+comment on column CARD_CONFIG.cost_fee
+  is '工本费';
+comment on column CARD_CONFIG.foregift
+  is '押金';

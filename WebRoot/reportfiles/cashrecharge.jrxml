@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cashrecharge" pageWidth="895" pageHeight="1242" whenNoDataType="AllSectionsNoDetail" columnWidth="855" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryWithPageHeaderAndFooter="true" uuid="5022688b-77c6-4616-b7af-65900eef7698">
+	<property name="ireport.zoom" value="1.2100000000000035"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="stl_Title_Noborder" hAlign="Center" vAlign="Middle" fontSize="20" isBold="true" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Title_Border" hAlign="Center" vAlign="Middle" fontSize="20" isBold="true" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Out_Border">
+		<box>
+			<topPen lineWidth="1.0"/>
+			<leftPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Colum_Header" hAlign="Center" vAlign="Middle" fontSize="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="1.0"/>
+			<leftPen lineWidth="1.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Left" hAlign="Left" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Left_En" hAlign="Left" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Center" hAlign="Center" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Center_En" hAlign="Center" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Right" hAlign="Right" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Right_En" hAlign="Right" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Left_Text" hAlign="Left" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Left_Text_En" hAlign="Left" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Center_Text" hAlign="Center" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Center_Text_En" hAlign="Center" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Right_Text" hAlign="Right" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Right_Text_En" hAlign="Right" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Note" hAlign="Center" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Under_Line" hAlign="Center" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Down" hAlign="Center" vAlign="Middle" fontSize="14" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<parameter name="p_Rechg_Amt" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Term_tr_No" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Rechg_Time" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Oper_Id" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Print_Name" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Yw_Note" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Cart_No" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Yw_Type" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Agt_No" class="java.lang.String"/>
+	<parameter name="p_Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Client_Name" class="java.lang.String"/>
+	<parameter name="p_Cert_No" class="java.lang.String"/>
+	<parameter name="p_Title_Logo" class="java.lang.String"/>
+	<parameter name="p_Agt_Name" class="java.lang.String"/>
+	<parameter name="p_Card_Type" class="java.lang.String"/>
+	<parameter name="p_Agt_Tel" class="java.lang.String"/>
+	<parameter name="p_Client_Tel" class="java.lang.String"/>
+	<parameter name="p_N" class="java.lang.String"/>
+	<parameter name="p_Y" class="java.lang.String"/>
+	<parameter name="p_R" class="java.lang.String"/>
+	<parameter name="p_Bus_Type" class="java.lang.String"/>
+	<parameter name="p_Subcardno" class="java.lang.String"/>
+	<parameter name="p_Actionno" class="java.lang.String"/>
+	<parameter name="p_Brchid" class="java.lang.String"/>
+	<parameter name="p_Acpt_Branch" class="java.lang.String"/>
+	<parameter name="p_Cardno" class="java.lang.String"/>
+	<parameter name="p_Print_Time1" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="446" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="771dc797-3e82-4467-b0e3-9b5604889ec4" style="stl_Grid_Left" x="1" y="100" width="65" height="30" isPrintWhenDetailOverflows="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[流水号：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="077d86db-e203-45c5-825e-4d11d746bf90" style="stl_Grid_Left" x="1" y="130" width="65" height="26" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[客户姓名：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="0d60b63f-934e-4d89-8ca1-b6f43e5dceab" style="stl_Grid_Left" x="186" y="100" width="39" height="29" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[卡号：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d8546f21-ef23-4a39-81cb-78ba8bb804d0" style="stl_Grid_Left" x="66" y="130" width="120" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Client_Name}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="da984bab-db3a-40fd-bc2e-c9c8e6fbaeb3" style="stl_Grid_Left" x="225" y="100" width="186" height="29" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Subcardno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5dd49a07-f377-4aa3-95c9-3e519929ee62" style="stl_Grid_Left" x="1" y="187" width="65" height="29" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[柜员工号：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="a6fb0b5b-cb96-4898-9ed6-c89f2b4c9a44" style="stl_Grid_Left_En" x="66" y="187" width="120" height="29"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Oper_Id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="3c86239a-7c2c-4aa6-9e88-451b55a3c136" style="stl_Grid_Left" x="186" y="158" width="75" height="29" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[市民卡业务：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="442662ab-6e67-4d73-90df-3ec7e4c0efc9" style="stl_Grid_Left" x="261" y="158" width="150" height="29" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Yw_Type}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="cb4a6487-b948-4862-9f66-faf92baa4093" style="stl_Grid_Left_En" x="78" y="159" width="108" height="28" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Rechg_Amt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="e5c3104e-2432-445b-bc8e-e4e6d7a9d50b" style="stl_Grid_Left" x="1" y="158" width="65" height="28" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[业务金额：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="624da48e-994a-4e6a-9b8b-5c7381f29bc9" style="stl_Grid_Left" x="66" y="159" width="12" height="28" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[￥]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="42c043e4-cdc3-4ca4-99d0-fb6355ebd744" style="stl_Grid_Left" x="186" y="130" width="75" height="28" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[客户身份证：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="03d9f84a-7814-49f2-8380-45d277015dde" style="stl_Grid_Left_En" x="261" y="130" width="150" height="28" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Cert_No}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9775cd53-7218-4054-8471-d6a7567a5227" style="stl_Grid_Left" x="1" y="216" width="65" height="30" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[受理时间：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="e46c8a9a-c48f-49b3-a04d-1e408eb28dae" style="stl_Grid_Left" x="66" y="216" width="120" height="30" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Rechg_Time}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="f910ca33-8798-43de-aeea-4a1c0c4cbef9" style="stl_Grid_Left" x="186" y="187" width="63" height="30" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[受理网点：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2d95c4c9-77e5-499d-a140-f9489bea4496" style="stl_Grid_Right" x="627" y="98" width="55" height="30" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[流水号：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f0a259ff-bd1a-44b3-8826-4e2aaabfab37" style="stl_Grid_Right" x="627" y="218" width="65" height="30" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[业务类型：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="849d56c4-bdcf-43b2-a492-c81e5173a740" style="stl_Grid_Right" x="627" y="128" width="41" height="28" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[卡号：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="b87050c4-145f-4462-9452-d9012bf4d435" style="stl_Grid_Left" x="692" y="218" width="163" height="30" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Yw_Type}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="d69d745a-9e47-411f-8744-7f01482423df" style="stl_Grid_Left" x="710" y="248" width="145" height="30" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Rechg_Amt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="d0a97bee-d9ae-43c5-b841-9e16272acb79" style="stl_Grid_Right" x="627" y="156" width="65" height="30" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[客户姓名：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="550969df-61c6-4cd8-a1d8-fa01587c9632" style="stl_Grid_Right" x="627" y="248" width="65" height="30" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[业务金额：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2b6479d8-831c-48a5-81e0-73a7dc6973c8" style="stl_Grid_Right" x="627" y="308" width="65" height="30" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[柜员工号：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="eec30b2c-9fcf-4ec0-a2d3-fc026c21fb82" style="stl_Grid_Left" x="692" y="157" width="163" height="29" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Client_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="c2143838-4451-4260-8015-4af603ed7529" style="stl_Grid_Left" x="692" y="308" width="163" height="30" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Oper_Id}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fa7cd840-cfd8-47d0-bc9f-1d0335eb8da3" style="stl_Grid_Left" x="692" y="338" width="163" height="30" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Rechg_Time}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="b02c87f5-6345-4c00-871e-4355bedd7e19" style="stl_Grid_Right" x="627" y="338" width="65" height="30" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[受理时间：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="91d20bc6-9260-456e-904c-5d10d7e8474a" style="stl_Grid_Left_En" x="682" y="186" width="173" height="31" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Cert_No}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="54834ec1-d7bc-4657-885b-17fb4db81aef" style="stl_Grid_Right" x="627" y="186" width="55" height="31" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[身份证：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d2468976-7242-4dc3-82ab-1544bc3ce362" style="stl_Grid_Right" x="627" y="278" width="65" height="30" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Left">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[受理网点：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="51ad713e-05af-449f-811a-e51056b44bfc" x="66" y="100" width="120" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Actionno}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="dcb279b7-fdfd-454f-8ac7-a89b3932ad5a" x="682" y="98" width="173" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Actionno}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="3b60ceec-11cb-4305-81a5-548918bd314f" x="249" y="187" width="162" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Acpt_Branch}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7946bce0-3256-441a-bbf5-d66752d60bba" x="692" y="278" width="163" height="30"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Acpt_Branch}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="7126a631-c80c-4e0f-ad0d-1e5de7d44a18" x="669" y="129" width="187" height="27"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Cardno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1ae73e47-64cb-41c3-bedf-f424d8815ebb" x="96" y="50" width="232" height="28"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Print_Time1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6e04d115-d209-4732-8ef3-58849662c79d" x="632" y="40" width="190" height="28"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Print_Time1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="47a1c78e-b765-4183-b0a3-5d88562c2aaa" style="stl_Grid_Left" x="692" y="250" width="18" height="28" isRemoveLineWhenBlank="true"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[￥]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

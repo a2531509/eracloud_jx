@@ -1,0 +1,15 @@
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='柜面服务'), '应用管理', null, 8, 'appManage', 'F', 'Y', 'closed', 'javascript:void(0);', 'icon-orgAccManage', 'A', null, to_date('08-09-2015', 'dd-mm-yyyy'), to_date('08-09-2015 14:42:24', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+COMMIT;
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='应用管理'), '自行车应用', null, 1, 'zxcApp', 'F', 'Y', 'closed', '/jsp/zxcApp/zxcMain.jsp', 'icon-bike1', 'A', null, to_date('08-09-2015', 'dd-mm-yyyy'), to_date('08-09-2015 15:41:25', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+COMMIT;
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='自行车应用'), '开通保存', null, 1, 'saveOpen', 'O', 'Y', 'open', 'javascript:void(0);', 'icon-save', 'A', null, to_date('08-09-2015 15:42:54', 'dd-mm-yyyy hh24:mi:ss'), to_date('08-09-2015 15:42:54', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+COMMIT;
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='自行车应用'), '取消保存', null, 2, 'saveCancel', 'O', 'Y', 'open', 'javascript:void(0);', 'icon-back', 'A', null, to_date('08-09-2015 15:44:16', 'dd-mm-yyyy hh24:mi:ss'), to_date('08-09-2015 15:44:16', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);

@@ -1,0 +1,8 @@
+alter table CARD_BIND_BANKCARD add SBBH varchar2(20);
+
+alter table CARD_BIND_BANKCARD add TCQ varchar2(20);
+
+comment on column CARD_BIND_BANKCARD.SBBH
+  is '社保编号';
+comment on column CARD_BIND_BANKCARD.TCQ
+  is '统筹区';

@@ -1,0 +1,2925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="月报" pageWidth="707" pageHeight="1000" whenNoDataType="AllSectionsNoDetail" columnWidth="667" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d3b24342-6627-407c-854e-79e47b0b1927">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="40"/>
+	<property name="ireport.y" value="672"/>
+	<style name="stl_Title_Noborder" hAlign="Center" vAlign="Middle" fontSize="18" isBold="true" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Title_Border" hAlign="Center" vAlign="Middle" fontSize="18" isBold="true" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Out_Border">
+		<box>
+			<topPen lineWidth="1.0"/>
+			<leftPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Colum_Header" hAlign="Center" vAlign="Middle" fontSize="12" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="1.0"/>
+			<leftPen lineWidth="1.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Left" hAlign="Left" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Left_En" hAlign="Left" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Center" hAlign="Center" vAlign="Middle" fontSize="13" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Center_En" hAlign="Center" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Right" hAlign="Right" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Grid_Right_En" hAlign="Right" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="1.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="1.0"/>
+		</box>
+	</style>
+	<style name="stl_Left_Text" hAlign="Left" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Left_Text_En" hAlign="Left" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Center_Text" hAlign="Center" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Center_Text_En" hAlign="Center" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Right_Text" hAlign="Right" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Right_Text_En" hAlign="Center" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Note" hAlign="Center" vAlign="Middle" fontSize="10" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="0.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<style name="stl_Under_Line" hAlign="Center" vAlign="Middle" fontSize="12" isBold="false" isItalic="false" isUnderline="false" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true">
+		<box>
+			<pen lineWidth="0.0"/>
+			<topPen lineWidth="0.0"/>
+			<leftPen lineWidth="0.0"/>
+			<bottomPen lineWidth="1.0"/>
+			<rightPen lineWidth="0.0"/>
+		</box>
+	</style>
+	<parameter name="p_Tj_Xjcz_Num_Bk" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Tj_Xjcz_Amt_Bk" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Title" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="p_Oper_Name" class="java.lang.String"/>
+	<parameter name="p_Date" class="java.lang.String"/>
+	<parameter name="p_Tj_Xjcz_Num_Ck" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Tj_Xjcz_Amt_Ck" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Tj_Xjcz_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Tj_Xjcz_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Xjcz_Num_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Xjcz_Amt_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Xjcz_Num_Ck" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Xjcz_Amt_Ck" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Xjcz_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Xjcz_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Xjcz_Num_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Xjcz_Amt_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Xjcz_Num_Ck" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Xjcz_Amt_Ck" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Xjcz_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Xjcz_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Dwsk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Dwsk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Day_In_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Day_In_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Day_Out_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Day_Out_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Ljcz_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Ljcz_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Ljcz_Num_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Ljcz_Amt_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Ljcz_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Ljcz_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Tjcz_Num_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Tjcz_Amt_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Tjcz_Num_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Tjcz_Amt_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Tjcz_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cx_Tjcz_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Dwff_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cg_Dwff_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Pre_Cash_Bal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cur_Cash_Bal" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjly_In_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjly_In_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjjx_Out_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjjx_Out_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjjj_Out_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjjj_Out_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjtj_In_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjtj_In_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Wdqk_In_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Wdqk_In_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Wdck_Out_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Wdck_Out_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Fwmmxg_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Fwmmxg_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Jxmmxg_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Jxmmxg_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Dwfwmmxg_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Dwfwmmxg_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Jxmmcz_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Jxmmcz_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Dwfwmmcz_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Dwfwmmcz_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Fwmmxg_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Jxmmxg_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Fwmmcz_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Fwmmcz_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Fwmmcz_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Jxmmcz_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Dwfwmmxg_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Dwfwmmcz_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Ljzlj_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Ljzlj_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Ljztj_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Ljztj_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Ljzzy_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Ljzzy_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Zyztj_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Zyztj_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Zyzzy_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Zyzzy_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Yrbzw" class="java.lang.String"/>
+	<parameter name="p_Money_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Tjztj_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Tjztj_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Jxmmscqy_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Jxmmscqy_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Gm_Jxmmscqy_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Shgl_Dlcz_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Shgl_Dlcz_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Zy_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Zy_Amt_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Zy_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Zy_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tjbxk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tjbxk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tjbxk_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tjbxk_Amt_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tjbxk_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tjbxk_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Lj_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Lj_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Lj_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Lj_Amt_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Lj_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Lj_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Zy_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Zy_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Zy_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Zy_Amt_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Zy_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Zy_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjxk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjxk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjxk_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjxk_Amt_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjxk_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjxk_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjbxk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjbxk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjbxk_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjbxk_Amt_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjbxk_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Qccx_Tjbxk_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Cccx_Zy_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Zy_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Zy_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfxk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfxk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfxk_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfxk_Amt_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfxk_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfxk_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxjczbxk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxjczbxk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxjczbxk_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxjczbxk_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxjczbxk_Amt_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxjczbxk_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfbxk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfbxk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfbxk_Num_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfbxk_Amt_Fk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfbxk_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czck_Tjgmxfbxk_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Wdjx_In_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Wdjx_In_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Xjcz_Num_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Xjcz_Amt_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Tj_Xjcz_Num_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Tj_Xjcz_Amt_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Guashi_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Guashi_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Guashi_Amt_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Bbk_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Hk_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zhuxiao_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zhuxiao_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zhuxiao_Num_Tot" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Qczlj_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Zz_Qczlj_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Shengling_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_ShenglingSfz_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Ff_Bk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Ff_Ck" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Tk_Ck" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Tk_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Hkzqb" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xgzlx_Tk" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjtj_Out_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xjtj_Out_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_C_Cx_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_C_Cx_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Bk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Bk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Ck_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Ck_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tot_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Czcx_Tot_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xgzlx_Ck" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Xgzlx_TotNum" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Cx_Bk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Cx_Bk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Cx_Ck_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Cx_Ck_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Cx_Tot_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Lj_Cx_Tot_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_ZxFh_Bk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_ZxFh_Bk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_ZxFh_Ck_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_ZxFh_Ck_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_ZxFh_Tk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_ZxFh_Tk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_ZxFh_Tot_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_ZxFh_Tot_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_App1_Xj_Bk_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_App1_Xj_Bk_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_App1_Xj_Ck_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_App1_Xj_Ck_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_App1_Xj_Tot_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_App1_Xj_Tot_Amt" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0.00]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Guashi_Ck" class="java.lang.String"/>
+	<parameter name="p_Sfdj_Bk_Num" class="java.lang.String"/>
+	<parameter name="p_Sfdj_Bk_Amt" class="java.lang.String"/>
+	<parameter name="p_Sfdj_H_Num" class="java.lang.String"/>
+	<parameter name="p_Sfdj_H_Amt" class="java.lang.String"/>
+	<parameter name="parameter5" class="java.lang.String"/>
+	<parameter name="p_Bhkcx_Num" class="java.lang.String">
+		<defaultValueExpression><![CDATA[0]]></defaultValueExpression>
+	</parameter>
+	<parameter name="p_Guashi_Kt_Bk" class="java.lang.String"/>
+	<parameter name="p_Guashi_Kt_Ck" class="java.lang.String"/>
+	<parameter name="p_Guashi_Kt_Tk" class="java.lang.String"/>
+	<parameter name="p_Guashi_Amt_Kt_Tot" class="java.lang.String"/>
+	<parameter name="p_CardLock_Bk" class="java.lang.String"/>
+	<parameter name="p_CardLock_Ck" class="java.lang.String"/>
+	<parameter name="p_CardLock_Tk" class="java.lang.String"/>
+	<parameter name="p_CardLock_Tot" class="java.lang.String"/>
+	<parameter name="p_CardUnLock_Bk" class="java.lang.String"/>
+	<parameter name="p_CardUnLock_Ck" class="java.lang.String"/>
+	<parameter name="p_CardUnLock_Tk" class="java.lang.String"/>
+	<parameter name="p_CardUnLock_Tot" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmcz_Bk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmcz_Ck_Num" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmcz_Tk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmcz_Tk_Tot" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmxg_Bk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmxg_Ck_Num" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmxg_Tk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmxg_Tk_Tot" class="java.lang.String"/>
+	<parameter name="p_Gmjymmcz_Bk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmjymmcz_Ck_Num" class="java.lang.String"/>
+	<parameter name="p_Gmjymmcz_Tk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmjymmcz_Tk_Tot" class="java.lang.String"/>
+	<parameter name="p_Gmjymmxg_Bk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmjymmxg_Ck_Num" class="java.lang.String"/>
+	<parameter name="p_Gmjymmxg_Tk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmjymmxg_Tk_Tot" class="java.lang.String"/>
+	<parameter name="p_Guashi_Undo_Bk" class="java.lang.String"/>
+	<parameter name="p_Guashi_Undo_Ck" class="java.lang.String"/>
+	<parameter name="p_Guashi_Undo_Tk" class="java.lang.String"/>
+	<parameter name="p_Guashi_Amt_Undo_Tot" class="java.lang.String"/>
+	<parameter name="p_Per_Num" class="java.lang.String"/>
+	<parameter name="p_Per_Amt" class="java.lang.String"/>
+	<parameter name="p_Tj_Ljcz_Num_Tot" class="java.lang.String"/>
+	<parameter name="p_Lj_Czcx_Bk_Amt" class="java.lang.String"/>
+	<parameter name="p_Lj_Czcx_Ck_Num" class="java.lang.String"/>
+	<parameter name="p_Lj_Czcx_Ck_Amt" class="java.lang.String"/>
+	<parameter name="p_Lj_Czcx_Tk_Num" class="java.lang.String"/>
+	<parameter name="p_Lj_Czcx_Tk_Amt" class="java.lang.String"/>
+	<parameter name="p_Lj_Czcx_Tot_Amt" class="java.lang.String"/>
+	<parameter name="p_Lj_Czcx_Tot_Num" class="java.lang.String"/>
+	<parameter name="p_Lj_Czcx_Bk_Num" class="java.lang.String"/>
+	<parameter name="p_HjlQR_Num_Tot" class="java.lang.String"/>
+	<parameter name="p_HjlQR_Amt_Tk" class="java.lang.String"/>
+	<parameter name="p_HjlQR_Num_Bk" class="java.lang.String"/>
+	<parameter name="p_HjlQR_Num_Ck" class="java.lang.String"/>
+	<parameter name="p_HjlQR_Amt_Ck" class="java.lang.String"/>
+	<parameter name="p_HjlQR_Num_Tk" class="java.lang.String"/>
+	<parameter name="p_HjlQR_Amt_Bk" class="java.lang.String"/>
+	<parameter name="p_HjlQR_Amt_Tot" class="java.lang.String"/>
+	<parameter name="p_Tj_Czcx_Tk_Num" class="java.lang.String"/>
+	<parameter name="p_Tj_Czcx_Bk_Amt" class="java.lang.String"/>
+	<parameter name="p_Tj_Czcx_Bk_Num" class="java.lang.String"/>
+	<parameter name="p_Tj_Czcx_Tot_Amt" class="java.lang.String"/>
+	<parameter name="p_Tj_Czcx_Tk_Amt" class="java.lang.String"/>
+	<parameter name="p_Tj_Czcx_Ck_Amt" class="java.lang.String"/>
+	<parameter name="p_Tj_Czcx_Ck_Num" class="java.lang.String"/>
+	<parameter name="p_Tj_Czcx_Tot_Num" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmcz_Tk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmcz_Bk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmcz_Tk_Tot" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmcz_Ck_Num" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmxg_Tk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmxg_Bk_Num" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmxg_Tk_Tot" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmxg_Ck_Num" class="java.lang.String"/>
+	<parameter name="p_Bbk_Tot" class="java.lang.String"/>
+	<parameter name="p_Hk_Tot" class="java.lang.String"/>
+	<parameter name="p_Bbk_Ck" class="java.lang.String"/>
+	<parameter name="p_Bbk_Tk" class="java.lang.String"/>
+	<parameter name="p_Hk_Ck" class="java.lang.String"/>
+	<parameter name="p_Hk_Tk" class="java.lang.String"/>
+	<parameter name="p_Hkzqb_Tot" class="java.lang.String"/>
+	<parameter name="p_Shengling_Tk" class="java.lang.String"/>
+	<parameter name="p_Shengling_Num_Tot" class="java.lang.String"/>
+	<parameter name="p_ShenglingSfz_Tk" class="java.lang.String"/>
+	<parameter name="p_ShenglingSfz_Tot" class="java.lang.String"/>
+	<parameter name="p_Hkzqb_Bk" class="java.lang.String"/>
+	<parameter name="p_Hkzqb_Tk" class="java.lang.String"/>
+	<parameter name="p_Zhuxiao_Ck" class="java.lang.String"/>
+	<parameter name="p_Shengling_Ck" class="java.lang.String"/>
+	<parameter name="p_ShenglingSfz_Ck" class="java.lang.String"/>
+	<parameter name="p_Hkzqb_Ck" class="java.lang.String"/>
+	<parameter name="p_Gmjymmcz_Tot_Num" class="java.lang.String"/>
+	<parameter name="p_Gmjymmxg_Tot_Num" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmxg_Tot_Num" class="java.lang.String"/>
+	<parameter name="p_Gmfwmmcz_Tot_Num" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmcz_Tot_Num" class="java.lang.String"/>
+	<parameter name="p_Gmsbmmxg_Tot_Num" class="java.lang.String"/>
+	<parameter name="p_bhk_Num_Bk" class="java.lang.String"/>
+	<parameter name="p_bhk_Amt_Bk" class="java.lang.String"/>
+	<parameter name="p_bhk_Num_Ck" class="java.lang.String"/>
+	<parameter name="p_bhk_Amt_Ck" class="java.lang.String"/>
+	<parameter name="p_bhk_Num_Tk" class="java.lang.String"/>
+	<parameter name="p_bhk_Amt_Tk" class="java.lang.String"/>
+	<parameter name="p_bhk_Num_Tot" class="java.lang.String"/>
+	<parameter name="p_bhk_Amt_Tot" class="java.lang.String"/>
+	<parameter name="p_bhk_Num_Bk_1" class="java.lang.String"/>
+	<parameter name="p_bhk_Amt_Bk_1" class="java.lang.String"/>
+	<parameter name="p_bhk_Num_Ck_1" class="java.lang.String"/>
+	<parameter name="p_bhk_Amt_Ck_1" class="java.lang.String"/>
+	<parameter name="p_bhk_Num_Tk_1" class="java.lang.String"/>
+	<parameter name="p_bhk_Amt_Tk_1" class="java.lang.String"/>
+	<parameter name="p_bhk_Num_Tot_1" class="java.lang.String"/>
+	<parameter name="p_bhk_Amt_Tot_1" class="java.lang.String"/>
+	<parameter name="p_ClrDate" class="java.lang.String"/>
+	<parameter name="p_CardIssue_Bk" class="java.lang.String"/>
+	<parameter name="p_CardIssue_Ck" class="java.lang.String"/>
+	<parameter name="p_CardIssue_Tk" class="java.lang.String"/>
+	<parameter name="p_CardIssue_Tot" class="java.lang.String"/>
+	<parameter name="p_tcqbg_Bk" class="java.lang.String"/>
+	<parameter name="p_tcqbg_Ck" class="java.lang.String"/>
+	<parameter name="p_tcqbg_Tk" class="java.lang.String"/>
+	<parameter name="p_tcqbg_Tot" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="959" splitType="Stretch">
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="127" width="53" height="20" uuid="c2557553-bbe7-4efb-b70d-beef44a2ee1e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Xjcz_Num_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Title_Noborder" x="23" y="24" width="623" height="42" uuid="c590b3d3-c116-4f03-8ebe-c613131fa7e5"/>
+				<textElement markup="html">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<span style='font-size:14px'>" + $P{p_Title} + "</span>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Right" x="380" y="66" width="49" height="22" uuid="ec593b51-5d3b-4921-8092-2af01257d469"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[打印人：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Left_Text" x="428" y="66" width="55" height="22" uuid="89c671e8-e396-4a40-bf82-07f80686676e"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Oper_Name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Right" x="482" y="66" width="53" height="22" uuid="547c69dc-1a3f-4bd5-9398-922f76c5b23c"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[打印时间：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Left_Text_En" x="534" y="66" width="112" height="22" uuid="5e5ae82b-6408-4847-88e2-18c29b764682"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="491" y="87" width="155" height="20" uuid="1788d931-f8a3-4dcc-91d2-5ca053796c47"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[合计]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="87" width="115" height="20" uuid="696f166e-dccf-4894-b1cd-926035c653d2"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="173" y="87" width="106" height="20" uuid="4f11e51d-2764-4eec-b726-015657d2b2fc"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[ 全功能卡]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="279" y="87" width="106" height="20" uuid="28261f89-8b6e-4b2f-9ec7-3c36ea9120f5"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[金融市民卡]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="23" y="87" width="35" height="120" uuid="bcd3611a-4388-497e-9f13-9e81fa10a02e"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[收入]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="23" y="207" width="35" height="120" uuid="d5c5085c-abe0-4de2-a77a-95c62a432dfd"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[支出]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="127" width="115" height="20" uuid="52d6887c-d8ff-4778-8819-8d1e26bc9f67"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[市民卡账户现金充值]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="173" y="107" width="53" height="20" uuid="2e205b68-dbc3-46b4-979a-76288458081a"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[笔数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="23" y="387" width="35" height="340" uuid="b8891677-12a7-4344-8c3d-df2abb75f54a"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[业 务  统 计]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="587" width="115" height="20" uuid="a61e2cac-e787-4477-a225-36d659f14252"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[挂失]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="707" width="115" height="20" uuid="2b52367d-ef6b-41e2-82ad-cc87632b89c1"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[统筹区变更]]></text>
+			</staticText>
+			<textField>
+				<reportElement style="stl_Grid_Left" x="117" y="367" width="56" height="20" uuid="08763de7-ce0a-4dce-bea8-d78979dcb4c3"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["结存"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="stl_Grid_Right" x="58" y="187" width="38" height="20" uuid="ffbc056b-4618-4d57-bc48-278df5198cf5"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["本"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center" x="96" y="187" width="13" height="20" uuid="76fe8711-c0e6-47e2-b880-8f0bd19c2f1b"/>
+				<box>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Yrbzw}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center" x="99" y="307" width="15" height="20" uuid="ffd6babb-8def-4f58-b38a-d280552b43c8"/>
+				<box>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Yrbzw}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="stl_Grid_Right" x="59" y="307" width="40" height="20" uuid="004e94ff-7aea-41e4-a94b-ff9e3dfe6201"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["本"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center" x="104" y="367" width="13" height="20" uuid="6e7f4ca6-0de1-48dc-9d01-24d6a412e7ce"/>
+				<box>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Yrbzw}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="stl_Grid_Right" x="59" y="367" width="45" height="20" uuid="8c41b801-cfe9-4200-90cf-813b78d4ce98"/>
+				<box>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["本"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="226" y="127" width="53" height="20" uuid="d9508563-4c84-4f60-9844-198e63aaf3ff"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Xjcz_Amt_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="332" y="127" width="53" height="20" uuid="2a3afa35-a369-4a2f-b8a3-d182d3af6770"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Xjcz_Amt_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="127" width="53" height="20" uuid="b144c28f-4341-4b08-9207-4d428d6de8b1"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Xjcz_Num_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="367" width="72" height="20" uuid="115ca283-92b3-4db7-9841-bdf76b5d2e30"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Money_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="307" width="72" height="20" uuid="3064dd1e-f8bb-425d-a6e6-29a5fdc4edc5"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Day_Out_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="187" width="83" height="20" uuid="69ec7549-cd8c-4148-a0be-0270b7ba6a6a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Day_In_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="127" width="83" height="20" uuid="7d8d653e-bc63-4f96-abb6-51cdcf1eb368"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Ljcz_Num_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="127" width="72" height="20" uuid="f3df67b9-f454-4525-95de-5de0c84059d6"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Xjcz_Amt_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="307" width="83" height="20" uuid="fdbc66e4-317c-470f-b8a6-0649dbc514aa"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Day_Out_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="107" width="115" height="20" uuid="3de3dc6a-d4bd-4f0b-878a-238a5bd1ed54"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="279" y="107" width="53" height="20" uuid="107fb486-ef38-4021-afcd-1b4d33679b4d"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[笔数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="107" width="53" height="20" uuid="74d60f0e-802f-47cb-aeaa-6a659c262762"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="491" y="107" width="83" height="20" uuid="a0f06b60-bf2c-458b-a4cf-36c45a9e748b"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[总笔数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="107" width="72" height="20" uuid="30222f44-0a57-4ec5-a2a3-230e90a52515"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[总金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="527" width="115" height="20" uuid="baaf88a6-19d7-4f2c-855b-19797f0e67b4"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[零星申领]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="627" width="115" height="20" uuid="d1848a1e-55a5-40ce-8d36-bfb4dfce6638"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[补卡]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Left_Text" x="262" y="-49" width="131" height="20" uuid="70424f87-1089-4c68-ae67-a1e0c4d0fa24"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$P{p_Oper_Name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="173" y="287" width="318" height="20" uuid="db6f171c-334d-4a38-8a73-19cb29cf5abb"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="287" width="115" height="20" uuid="f41b97c8-d485-46c1-9c75-0c18d447f5d0"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[网点存款]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="287" width="72" height="20" uuid="8c3eca39-2ac9-4438-9bcb-6e4f95b9cf4e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Wdck_Out_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="287" width="83" height="20" uuid="00544110-771b-4a7a-94b0-2bc70f62eca6"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Wdck_Out_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="107" width="53" height="20" uuid="a6b9e2d5-bc63-471e-a443-545ec7469d71"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="385" y="87" width="106" height="20" uuid="3e99fd33-a7dc-4dc3-9bc2-5bb62f7c70d8"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[其他卡类型]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="385" y="107" width="53" height="20" uuid="b5268308-8621-4a89-b056-4a200cfaa61f"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[笔数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="107" width="53" height="20" uuid="f6a8fc85-6a25-482b-8f93-1123fabc58e4"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[金额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Left" x="108" y="187" width="65" height="20" uuid="c9191ed6-26a2-4890-a1dc-ad9305d0be99"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[收入汇总]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="173" y="187" width="318" height="20" uuid="e6385e82-9514-48f9-9174-d209de859cae"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="187" width="72" height="20" uuid="964bcbed-9c53-4580-afaf-38b8965aed42"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Day_In_Amt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="23" y="327" width="35" height="60" uuid="a1ed0ca8-0572-4cca-9a9a-fce1b30051ae"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[现 金  汇 总]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="173" y="307" width="318" height="20" uuid="69b34be7-9504-416f-9a09-115e3c831d79"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="627" width="72" height="20" uuid="09302c87-b7a2-4b6f-bfed-7ecdbfddcf35"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="587" width="72" height="20" uuid="8dbd4f74-9bbb-4845-b1c9-e533359e6852"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="527" width="72" height="20" uuid="0bdf56e0-70b8-477f-b3d3-c2fd21958b1e"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="627" width="53" height="20" uuid="18c1bf91-937b-4233-b390-0f6e0ce60a28"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="667" width="115" height="20" uuid="08a2ded3-d985-4c0f-9bb4-5193ed246806"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[注销]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="647" width="72" height="20" uuid="3943739b-7206-4972-948b-be5c0cce5d59"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="667" width="72" height="20" uuid="9c5bfded-d4bf-4da1-af91-f29b5d0f2cc3"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="687" width="115" height="20" uuid="7a053f06-0e5b-4fd6-b740-bd1e68089570"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[换卡转钱包]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="687" width="72" height="20" uuid="c24f078e-218a-4b7d-bbfb-1df739852a86"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="647" width="115" height="20" uuid="45ebeaad-807f-4056-bc13-c0369cd39729"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[换卡]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="587" width="53" height="20" uuid="0d56040b-c50b-477a-88d2-e8ab3c27f432"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="587" width="53" height="20" uuid="2388d982-c584-4f34-9d50-a0b4b61c2aa7"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="667" width="53" height="20" uuid="72e728d6-7ace-48fb-a9a4-8ca0b059fe6b"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="667" width="53" height="20" uuid="ae1a4e15-4c8f-484f-8864-87d8f0b06eb8"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="667" width="53" height="20" uuid="581dbf2b-af37-4361-8e2f-68c535a0ed0b"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="647" width="53" height="20" uuid="990c7f6f-52fc-48e1-880d-beca8e9d8862"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="647" width="53" height="20" uuid="20bcc501-36c4-430c-9453-09270d09bfb7"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="627" width="53" height="20" uuid="c3afeef2-5051-480b-b4f2-ad111a77c14e"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="627" width="53" height="20" uuid="a4110780-47cb-4866-988a-c579d5cd9f4b"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="647" width="53" height="20" uuid="cd769871-fa03-4e13-9b68-54d2789faca3"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="127" width="53" height="20" uuid="9423d5c4-7668-4e66-a227-59babf7166c8"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Xjcz_Num_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="438" y="127" width="53" height="20" uuid="e1fb09af-f2ba-4bc1-b1e6-4e448890dafa"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Xjcz_Amt_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="587" width="53" height="20" uuid="a43177b4-8c00-40d7-91b4-782927badbf7"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="587" width="53" height="20" uuid="50368b21-0446-4b59-8d50-3720bbba78b2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="587" width="83" height="20" uuid="53b8271d-28bb-4a2f-9bb9-0d5de3780b8f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Amt_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="627" width="53" height="20" uuid="01c30520-4c6f-4a3c-b3d9-81f6a84ee5b4"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Bbk_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="627" width="83" height="20" uuid="ae839834-b6d6-4e58-b15e-c74f4e8f1d10"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Bbk_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="647" width="53" height="20" uuid="75638656-5ea4-403e-b4a8-9d3999e7b332"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Hk_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="647" width="83" height="20" uuid="1f4e521b-d63c-46cb-9771-c662664bcea3"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Hk_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="667" width="53" height="20" uuid="2b33a8a8-d3ea-4b00-a59d-52a252f1f437"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Zhuxiao_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="667" width="53" height="20" uuid="07e4d506-abd1-4cd0-b312-97519ad8896a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Zhuxiao_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="667" width="83" height="20" uuid="434fe6f9-3f4d-4693-a4cf-499fbe569c1f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Zhuxiao_Num_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="687" width="83" height="20" uuid="2ebbc29b-f2b8-4ba0-9815-d4b7e7861638"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Hkzqb_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="226" y="207" width="53" height="20" uuid="8f9806af-18b8-4239-bf85-40b82391e0c8"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Czcx_Bk_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="207" width="53" height="20" uuid="ceb382cc-114e-43de-9087-410248b1f11f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Czcx_Ck_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="332" y="207" width="53" height="20" uuid="e8b41425-271c-406e-9a00-1bd4e2d632cf"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Czcx_Ck_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="207" width="53" height="20" uuid="4294215c-aba5-4671-8a62-2b73c087c506"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Czcx_Tk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="438" y="207" width="53" height="20" uuid="b75378af-4911-4401-9053-f46d993a9803"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Czcx_Tk_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="207" width="72" height="20" uuid="451123ee-6ea5-4f84-a396-e7cb73eb6398"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Czcx_Tot_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="207" width="83" height="20" uuid="09cb9525-7bed-4dca-b875-ff2dd5860262"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Czcx_Tot_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="267" width="115" height="20" uuid="a647a49e-3241-4bf5-8af5-605bab7c0da5"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[注销卡账户返还余额]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="267" width="53" height="20" uuid="efeafb84-277b-4f8a-9428-881488db60e5"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_ZxFh_Bk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="226" y="267" width="53" height="20" uuid="221d3974-f475-43c3-bdce-1374e18f8727"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_ZxFh_Bk_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="267" width="53" height="20" uuid="70c6755e-8dc0-4e1c-b49c-eccf5b497856"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_ZxFh_Ck_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="332" y="267" width="53" height="20" uuid="40116b32-af24-4f20-bacb-b97fcf8d0c80"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_ZxFh_Ck_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="267" width="53" height="20" uuid="462b67f5-d239-4293-8789-29e7f0db1792"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_ZxFh_Tk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="438" y="267" width="53" height="20" uuid="2542c01b-a67b-483b-9c49-901e6e46920c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_ZxFh_Tk_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="267" width="83" height="20" uuid="56c3c295-d22d-4ce0-a52a-541669a6762e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_ZxFh_Tot_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="267" width="72" height="20" uuid="7db069db-6daa-4f5e-a7bc-6a23926af1d8"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_ZxFh_Tot_Amt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="587" width="53" height="20" uuid="1072aea1-1c06-40ce-99ef-58b609926931"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="587" width="53" height="20" uuid="c095bf44-1e23-4de9-85dd-e832abaa72f9"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Ck}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="stl_Grid_Left" x="112" y="307" width="61" height="20" uuid="33cf409d-8d19-4c74-9a2d-62596c8e907a"/>
+				<box>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["支出汇总"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="207" width="115" height="20" uuid="bb506c11-96c3-4c6a-8ad8-a4817269c13c"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[市民卡账户充值撤销]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="207" width="53" height="20" uuid="2f75d040-161c-4d1f-a5cf-67e7eabd895c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Lj_Czcx_Bk_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="567" width="115" height="20" uuid="939f3030-c37c-44e9-8538-80970df286ca"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[临时挂失]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="567" width="53" height="20" uuid="eeecb5d4-d279-4250-8a7f-ad4577974e13"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Kt_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="567" width="53" height="20" uuid="947fcbbd-d144-4bcc-873e-00a5f69b102c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Kt_Tk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="567" width="53" height="20" uuid="a35569a8-9e70-48b4-9ceb-d0916556db3e"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="567" width="83" height="20" uuid="4b2dc8b1-379a-4f3d-846c-74acf554e7a1"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Amt_Kt_Tot}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="567" width="72" height="20" uuid="2d5511ac-008a-4c0b-b686-da2d2f5670b4"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="567" width="53" height="20" uuid="1130d9bb-25e5-4e9a-b0f5-e55c3d7e13d0"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="567" width="53" height="20" uuid="d1cbb84e-6014-4e0a-85b9-35750f41a4ca"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Kt_Bk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="567" width="53" height="20" uuid="73f273d2-21a8-4af7-a911-566a6d1d9e85"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="547" width="53" height="20" uuid="e858ccb4-b891-4b75-b2e3-f5216b8408c1"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="547" width="53" height="20" uuid="da660062-9031-423e-8369-b42ae3ef289c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_CardIssue_Ck}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="547" width="72" height="20" uuid="d12a5134-3cb4-4cd6-9fae-ebf4f43ae43e"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="547" width="53" height="20" uuid="b55c6c76-051e-4b82-bf76-ef129b14b385"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_CardIssue_Bk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="547" width="53" height="20" uuid="797c31e1-8a47-40e5-88a6-65add8b5fbd0"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="547" width="83" height="20" uuid="b71369c9-d0d7-405d-aac6-66e4aa7fe906"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_CardIssue_Tot}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="547" width="53" height="20" uuid="b934390b-5ee7-47b7-a758-db867c7e975e"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="547" width="53" height="20" uuid="a8428d9d-4d6c-43c8-b0d8-1107258368c1"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_CardIssue_Tk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="547" width="115" height="20" uuid="083bcdb1-2b15-4b48-9de0-adde40aea6cf"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[卡发放]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="407" width="72" height="20" uuid="5bcca60d-86f8-408f-b938-b48f2baea29f"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="467" width="115" height="20" uuid="39967bb4-2352-49e2-8e8f-e40a39ba6757"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[交易密码修改]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="407" width="115" height="20" uuid="e924642c-7b6e-4f45-80a4-f4627f8e8338"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[服务密码重置]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="467" width="53" height="20" uuid="5b6b7d97-9790-4c96-aa10-0e0b08725c31"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmjymmxg_Ck_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="427" width="53" height="20" uuid="c2ae54e4-8221-40b5-99d0-edf7a57b3efc"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="467" width="53" height="20" uuid="b3efdceb-8a76-4469-8b21-0e888987293c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmjymmxg_Tk_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="407" width="53" height="20" uuid="c1a0e9b8-88c4-4f1a-a4d3-5ff46a3bfaaf"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="427" width="53" height="20" uuid="012fae48-5c1c-4b0e-839f-288b5a3136c7"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmfwmmxg_Ck_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="427" width="72" height="20" uuid="25f0449b-4aa0-4fca-8da5-0c39bd9e434c"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="467" width="53" height="20" uuid="8a22a59d-5d54-47b0-8dce-7a048c0aeeba"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="427" width="83" height="20" uuid="8d4efb17-9694-4ec9-84f9-d705a7e90da6"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmfwmmxg_Tot_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="447" width="53" height="20" uuid="71ef71b2-3672-4bbd-a403-20507872c153"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="467" width="83" height="20" uuid="f9b3f6b2-3adb-4f65-984e-277c3347b0d0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmjymmxg_Tot_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="467" width="72" height="20" uuid="90eca0a3-2c2d-49f8-aef3-3b2e4634c5ee"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="427" width="115" height="20" uuid="9dfbbaef-52fa-41ff-ab19-06bc29045b61"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[服务密码修改]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="447" width="53" height="20" uuid="cd0ae971-51c7-4720-8464-7b8e7fb83557"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmjymmcz_Ck_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="427" width="53" height="20" uuid="5cd4501d-e4c1-4c54-9bb7-03014a22c809"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmfwmmxg_Tk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="407" width="53" height="20" uuid="52238425-c27f-4707-8eca-862e33058fc9"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmfwmmcz_Tk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="407" width="53" height="20" uuid="bac90157-78c2-4622-a3cc-2b37048ca5a9"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmfwmmcz_Bk_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="447" width="72" height="20" uuid="3abc34e4-1bd0-4b07-b822-cb9d042bb811"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="427" width="53" height="20" uuid="d196be9e-356f-4fa7-a1b6-c0cf27578ad0"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="447" width="53" height="20" uuid="bd3fff4e-c170-4ee6-a13a-df04478a2126"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmjymmcz_Bk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="407" width="53" height="20" uuid="18b52c84-5845-4833-9646-fa7fef78cdd1"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmfwmmcz_Ck_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="467" width="53" height="20" uuid="4d014b1f-0f26-4949-8c4c-16229c7d3f0e"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="407" width="53" height="20" uuid="46d0e816-2efd-4fb2-a42d-0dfd7bb4dcd3"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="407" width="53" height="20" uuid="0734f87e-70db-4a16-8164-43cb9ed766a6"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="447" width="53" height="20" uuid="cf114e91-a9b2-48b1-8f3c-4780cdc0cfec"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="467" width="53" height="20" uuid="829a07bd-3aea-41a1-a4ac-da3cdc295f90"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmjymmxg_Bk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="427" width="53" height="20" uuid="9b3ba9e6-6b10-4170-b416-7eeac45b9e51"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmfwmmxg_Bk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="447" width="83" height="20" uuid="edadce09-84bb-4fd4-b7c1-89979bfe221b"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmjymmcz_Tot_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="467" width="53" height="20" uuid="755fad37-bcaa-4667-b5e0-1ebcbe11b1bd"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="427" width="53" height="20" uuid="ce596e43-3317-4671-a61f-a648636bdb87"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="447" width="53" height="20" uuid="589dba01-c05b-4993-8141-3b0d049ea573"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="447" width="53" height="20" uuid="9c90cfbb-a16f-425b-b2e2-fa6703c3fbae"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmjymmcz_Tk_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="447" width="115" height="20" uuid="f1be3af3-036a-42f3-9c15-4a680a74d1e5"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[交易密码重置]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="407" width="83" height="20" uuid="dbb7cae0-2cd3-475a-9171-8e1b36046b63"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmfwmmcz_Tot_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="607" width="53" height="20" uuid="737532fb-c5b6-4e37-9ae0-87b713f0863a"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Undo_Tk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="607" width="53" height="20" uuid="67fa885d-316f-4e84-bd1f-55963ce2681e"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="607" width="53" height="20" uuid="c7645ff1-18f5-4a2d-9753-a52578b02eec"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Undo_Bk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="607" width="53" height="20" uuid="ad1de643-afe7-4737-a65c-b43492738509"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="607" width="53" height="20" uuid="f1556783-df4c-4fe5-9fa8-c26dbaaf67eb"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Undo_Ck}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="607" width="72" height="20" uuid="630ea439-d197-46e2-9f48-6e8c7bc01da4"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="607" width="115" height="20" uuid="c00467e6-288b-482d-ae5b-8b353417cd43"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[解挂失]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="607" width="83" height="20" uuid="046266fe-858b-4c37-b12c-6b23971c47c2"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Guashi_Amt_Undo_Tot}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="607" width="53" height="20" uuid="8e7277be-9149-4602-8e3f-759674bc853a"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="347" width="115" height="20" uuid="5e0d6cc5-c0d2-4805-bab9-f186138eea6f"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[上日结存]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="347" width="72" height="20" uuid="4c072887-7862-42f5-a3da-81b2f8d1a03d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Per_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="147" width="72" height="20" uuid="d8c6478e-5cb7-4b0b-a613-757065e1c0f4"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Xjcz_Amt_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="147" width="53" height="20" uuid="4519672a-7703-4f1f-a353-b2d36d4b32c3"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Xjcz_Num_Ck}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="147" width="115" height="20" uuid="a30bc94a-5582-4b9d-9f63-1a7b9b5046c2"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[市民卡钱包现金充值]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="147" width="53" height="20" uuid="c2d3d79f-1c25-4b61-b7ad-cc9ed1d7b820"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Xjcz_Num_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="147" width="83" height="20" uuid="b476ccb8-9258-4881-88b9-b6d4800fa644"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Xjcz_Num_Tot}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="147" width="53" height="20" uuid="04b7bc33-6835-4347-9989-aed6401ace2d"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Xjcz_Num_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="332" y="147" width="53" height="20" uuid="500cce8a-dde9-4a6a-89b8-a410a623efb4"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Xjcz_Amt_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="438" y="147" width="53" height="20" uuid="eae541fd-e3f1-4bff-87b9-4e2cfaf3baa8"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Xjcz_Amt_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="387" width="83" height="20" uuid="1ff363fa-0c3f-4242-aa6c-d7d34cba1865"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_HjlQR_Num_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="438" y="387" width="53" height="20" uuid="9609d838-4ff2-4fe5-8c12-80d6ab2b3a5e"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_HjlQR_Amt_Tk}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="387" width="53" height="20" uuid="33230766-758d-4787-b6c7-e50d30ef23c3"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_HjlQR_Num_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="387" width="53" height="20" uuid="9fd974df-4d95-4f52-8237-9d1aab29c66d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_HjlQR_Num_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="332" y="387" width="53" height="20" uuid="f416a651-006d-4ed9-848c-8f94d605f94b"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_HjlQR_Amt_Ck}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="387" width="115" height="20" uuid="cca94337-d91c-4774-9932-4211eea05da4"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[灰记录确认笔数]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="387" width="53" height="20" uuid="5048e0df-fcb4-427e-8f41-30be08286ae7"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_HjlQR_Num_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="226" y="387" width="53" height="20" uuid="34020ae2-5b7c-4b68-9be4-459b7faf6bee"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_HjlQR_Amt_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="387" width="72" height="20" uuid="cf1b6888-4baa-4e72-b102-738f880706da"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_HjlQR_Amt_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="227" width="53" height="20" uuid="61c2dd06-300f-4909-8981-90ce37fad715"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Czcx_Tk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="226" y="227" width="53" height="20" uuid="19e14558-b131-4f29-8219-59804b964eed"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Czcx_Bk_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="227" width="53" height="20" uuid="c69cf1ce-aefc-415f-b0a5-5f83b13a3908"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Czcx_Bk_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="227" width="72" height="20" uuid="7e2ce5da-e846-4b86-aa58-eea12328b771"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Czcx_Tot_Amt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="227" width="115" height="20" uuid="a7f2e25c-3df0-4246-a6f6-2d62bd4219a4"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[市民卡钱包充值撤销]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="438" y="227" width="53" height="20" uuid="aaf27afd-20af-452b-9d47-e2a67a0592b6"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Czcx_Tk_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="332" y="227" width="53" height="20" uuid="c5293b0f-df7d-4cdb-baba-9ededa5d15f3"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Czcx_Ck_Amt}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="227" width="53" height="20" uuid="288dfb2a-9d8a-42d2-b2ae-6a2ed7c8cf4f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Czcx_Ck_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="227" width="83" height="20" uuid="22708a51-e953-4376-8018-d89966b98392"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Czcx_Tot_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="487" width="53" height="20" uuid="7640f632-f523-4e4f-bfd9-aa53a0a01047"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="487" width="53" height="20" uuid="23a839f2-eac2-4e33-b0a0-221994a5dee1"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmsbmmcz_Tk_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="487" width="53" height="20" uuid="11243535-016f-4df6-b25b-abf688505f73"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="487" width="72" height="20" uuid="31f04011-08c8-403e-96d7-f68fffa9886a"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="487" width="53" height="20" uuid="91ed360e-0f87-49ec-957d-51a316c21bba"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmsbmmcz_Bk_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="487" width="53" height="20" uuid="ac197e7d-497c-4c92-ba11-94d9ce685ced"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="487" width="115" height="20" uuid="6dcd358a-b838-4565-9494-d0d0377f9821"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[医保密码重置]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="487" width="83" height="20" uuid="01ce0288-b9ae-479e-a18f-f04127231a43"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmsbmmcz_Tot_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="487" width="53" height="20" uuid="cb8c1b5c-33eb-43ab-a11a-444228333457"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmsbmmcz_Ck_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="507" width="53" height="20" uuid="f87dd70a-2ccc-48ee-81e8-4f3dedb9430b"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="507" width="53" height="20" uuid="7e3d7cab-14cc-49d3-be58-20e98bcbf852"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmsbmmxg_Tk_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="507" width="53" height="20" uuid="0a28e2ad-0ef5-4fd2-84c6-63939b39d5a4"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="507" width="72" height="20" uuid="3f548f77-bccb-41a1-8bff-31e9dd3ff424"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="507" width="53" height="20" uuid="ff9ea66d-474e-47fb-b8e3-7cfef6ca5894"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmsbmmxg_Bk_Num}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="507" width="53" height="20" uuid="31ac809a-ec8d-49ac-80fb-99b31a29cd44"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="507" width="115" height="20" uuid="5ecb860e-31ae-4243-be21-60defbb4696e"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[医保密码修改]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="507" width="83" height="20" uuid="aecc344d-253b-4752-9484-60f8f7647963"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmsbmmxg_Tot_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="507" width="53" height="20" uuid="55ae55b5-b9f9-40ce-b310-1c7f089ee918"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Gmsbmmxg_Ck_Num}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="627" width="53" height="20" uuid="221cb13b-5c44-4779-a3de-e57a81cb194f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Bbk_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="627" width="53" height="20" uuid="9748972b-571d-4c66-bd6c-f5dc9ae09a8d"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Bbk_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="647" width="53" height="20" uuid="13dc8c36-12e2-46d6-8725-b2f31cda07c6"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Hk_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="647" width="53" height="20" uuid="698cb4c2-5a3c-4a03-be36-a5f4a680b7b0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Hk_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="527" width="53" height="20" uuid="ce920027-33ff-4f06-982f-912c270d2c77"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Shengling_Tk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="527" width="53" height="20" uuid="fbd524e9-3efb-487c-8349-e9e7016e09e4"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="527" width="53" height="20" uuid="6b1b8b26-cf46-4a1c-bceb-af23e79d3d37"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="527" width="83" height="20" uuid="af9e00f5-aa92-4191-9cf3-b2803b4f2e65"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Shengling_Num_Tot}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="527" width="53" height="20" uuid="751e5d95-078c-427b-a84e-27b1f768d79c"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="527" width="53" height="20" uuid="3969f90a-4bfc-4cc1-8152-db1ea125744c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Shengling_Bk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="707" width="53" height="20" uuid="7fce7bff-967c-41a8-901e-d20558772686"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="707" width="53" height="20" uuid="cfb86566-165a-428d-848c-a917a6e8d7da"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_tcqbg_Tk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="707" width="53" height="20" uuid="c48efe8c-a0dd-4be5-99b0-f649e9e78d3b"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="707" width="53" height="20" uuid="5f886a61-0490-44f7-b26c-6ac027ef3786"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_tcqbg_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="707" width="83" height="20" uuid="4dddbd3e-9af6-453e-bc8f-c83b329dab3e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_tcqbg_Tot}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="707" width="53" height="20" uuid="8d3cdc59-ba45-4743-9845-ad64e81906b2"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="574" y="707" width="72" height="20" uuid="dd902f88-ff9e-44da-acc2-ce148cebf25a"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="332" y="687" width="53" height="20" uuid="3971c60f-3071-402a-9005-3006bc9fa522"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="687" width="53" height="20" uuid="9cc50520-a74b-4277-ab30-73a888b9d36e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Hkzqb_Bk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="438" y="687" width="53" height="20" uuid="ce65e059-80c6-4595-9786-d74567299cca"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="687" width="53" height="20" uuid="c15efdba-8917-4c11-a7ab-cd17eb503444"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Hkzqb_Tk}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="226" y="687" width="53" height="20" uuid="906d6166-170e-47fb-ad25-3fcd64184794"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="667" width="53" height="20" uuid="d3c4546d-aec0-4987-9523-a7bea71e7a93"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Zhuxiao_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="527" width="53" height="20" uuid="fab312c8-285b-4c06-b944-945aed2e9c61"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Shengling_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="707" width="53" height="20" uuid="23b8e859-6518-4e9f-ae89-629722d33569"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_tcqbg_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="687" width="53" height="20" uuid="6ef54516-92a9-4d33-be6e-a1cc6b7005f0"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Hkzqb_Ck}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="167" width="115" height="20" uuid="28bcc72a-6e38-4e7f-aa40-b2fac99ffe77"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[补换卡金额]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="167" width="53" height="20" uuid="ed01dbfa-7aac-4878-9a9b-77a31024bc51"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Num_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="226" y="167" width="53" height="20" uuid="cff2bf95-3249-4ae1-ace9-34eecefb0264"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Amt_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="167" width="53" height="20" uuid="794e24e1-baef-4b99-8b17-d94b0014639e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Num_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="332" y="167" width="53" height="20" uuid="82cda5cb-d61b-47ad-a2c8-c3d10f2c951f"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Amt_Ck}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="167" width="53" height="20" uuid="96a5e01f-6431-44ad-9c95-f62c2d28cade"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Num_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="438" y="167" width="53" height="20" uuid="ab9929b5-719f-4021-a4d7-2bfd48305655"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Amt_Tk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="167" width="83" height="20" uuid="7a263383-5eb6-4717-977a-7220e50a2577"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Num_Tot}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="167" width="72" height="20" uuid="97f72ea9-7cb3-4e3e-95f1-dd6bcba9e880"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Amt_Tot}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="247" width="115" height="20" uuid="011cbd9c-9426-4245-a2cb-1e591aa43025"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[补换卡撤销金额]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="385" y="247" width="53" height="20" uuid="a490d58f-f6c6-4786-84ad-74095cffeda6"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Num_Tk_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="279" y="247" width="53" height="20" uuid="5aeb5d5c-887e-4350-8bfd-cb62dcdfad50"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Num_Ck_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="247" width="72" height="20" uuid="0e3e9717-8c9d-4f77-a736-0186b90e181c"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Amt_Tot_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="332" y="247" width="53" height="20" uuid="c72cb26c-2577-44bf-b568-7cbdfdce7cdd"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Amt_Ck_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="491" y="247" width="83" height="20" uuid="bcb71e04-61c9-435b-9380-94ffac5bb302"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Num_Tot_1}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="173" y="247" width="53" height="20" uuid="6b2c4d7b-3278-48ef-a341-b8f16f450e54"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Num_Bk_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="226" y="247" width="53" height="20" uuid="2e2168e6-bbb4-4483-8ec7-cdeff5171f8e"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Amt_Bk_1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="438" y="247" width="53" height="20" uuid="12c8d18b-0d4e-4059-b8b6-ace192837738"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_bhk_Amt_Tk_1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Right" x="23" y="66" width="53" height="22" uuid="a51373e2-c422-4cf1-b3a3-5f206317c112"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[轧账日期：]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="226" y="147" width="53" height="20" uuid="cbf51301-14f7-4b83-b813-b3a736d89488"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_Tj_Xjcz_Amt_Bk}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Left_Text" x="75" y="66" width="86" height="22" uuid="e55cf520-c2ed-4aac-805f-b5c991cee8d6"/>
+				<box>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{p_ClrDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="58" y="327" width="115" height="20" uuid="25489ac8-ee81-405b-9edc-a01ecf2a1171"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[本日发生额]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement style="stl_Grid_Center_En" x="574" y="327" width="72" height="20" uuid="20506d85-c766-4a2a-acab-8e2fe12f7977"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[String.format("%.2f", Float.parseFloat($P{p_Day_In_Amt}) - Float.parseFloat($P{p_Day_Out_Amt}))]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="stl_Grid_Center" x="173" y="347" width="401" height="20" uuid="e9ad5510-f726-45f5-9f49-9461c51e39dc"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

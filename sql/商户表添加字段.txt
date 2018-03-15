@@ -1,0 +1,5 @@
+-- Add/modify columns 
+alter table BASE_MERCHANT add REGION_ID varchar2(10);
+-- Add comments to the columns 
+comment on column BASE_MERCHANT.REGION_ID
+  is 'ËùÊôÇøÓò';

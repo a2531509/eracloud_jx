@@ -1,0 +1,319 @@
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.OfflineHlhtTask:101) - 获取DF和DT有误:null
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.OfflineHlhtTask:108) - 处理DF和DT有误:null
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始脱机数据处理...
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.OfflineHlhtTask:184) - java.lang.NullPointerException
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 脱机数据处理出现错误！null
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束脱机数据处理...
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始上传拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.OfflineHlhtTask:224) - com.erp.exception.CommonException: 获取ftp配置出错，请联系系统管理员！
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 脱机数据处理出现错误！获取ftp配置出错，请联系系统管理员！
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.OfflineHlhtTask:263) - java.lang.NullPointerException
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 脱机数据处理出现错误！null
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传Gf文件...
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.OfflineHlhtTask:156) - 上传上海FH文件有误:null
+[2018-01-05 10:50:44 ERROR] [main] (com.erp.task.OfflineHlhtTask:161) - 上传全国FH文件有误:null
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:202) - -------------------------------------------------------
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:203) - 开始读取互联互通下发文件
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:216) - 检查FTP配置信息
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:221) - host_download_path:/TransBase/Download/
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:226) - host_err_path:/TransBase/Error/
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:231) - host_repeat_path:/TransBase/Repeat/
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:236) - host_history_path:/TransBase/DownloadHis/
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1344) - host_ip:10.82.21.196
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1349) - host_port:21
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1354) - user_name:admin
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1359) - pwd:admin
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1365) - FTP连接正常
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1370) - FTP登录正常
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:242) - FTP目录切换正常
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:244) - 当前工作目录/TransBase/Download
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:245) - FTP检查完毕
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:250) - 检测到491个文件需要处理！
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000009894
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000009894处理成功!
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010102
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010102处理成功!
+[2018-01-05 10:52:49 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010146
+[2018-01-05 10:52:50 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010146处理成功!
+[2018-01-05 10:52:50 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010151
+[2018-01-05 10:52:50 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010151处理成功!
+[2018-01-05 10:52:50 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010162
+[2018-01-05 10:52:50 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010162处理成功!
+[2018-01-05 10:52:50 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010244
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010244处理成功!
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010316
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010316处理成功!
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010375
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010375处理成功!
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010437
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010437处理成功!
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010487
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010487处理成功!
+[2018-01-05 10:53:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010507
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010507处理成功!
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010518
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010518处理成功!
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010529
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010529处理成功!
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010534
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010534处理成功!
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17122931400000010548
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17122931400000010548处理成功!
+[2018-01-05 10:53:01 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010644
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010644处理成功!
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010646
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010646处理成功!
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010648
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010648处理成功!
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010683
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010683处理成功!
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010838
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010838处理成功!
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010849
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010849处理成功!
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010851
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010851处理成功!
+[2018-01-05 10:53:02 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010882
+[2018-01-05 10:53:03 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010882处理成功!
+[2018-01-05 10:53:03 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010892
+[2018-01-05 10:53:03 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010892处理成功!
+[2018-01-05 10:53:03 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010898
+[2018-01-05 10:53:03 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010898处理成功!
+[2018-01-05 10:53:03 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010903
+[2018-01-05 10:53:03 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010903处理成功!
+[2018-01-05 10:53:03 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010937
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010937处理成功!
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010962
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010962处理成功!
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010970
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010970处理成功!
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000010987
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000010987处理成功!
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000011016
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000011016处理成功!
+[2018-01-05 10:53:13 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000011036
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000011036处理成功!
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123031400000011039
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123031400000011039处理成功!
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011059
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011059处理成功!
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011066
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011066处理成功!
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011094
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011094处理成功!
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011146
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011146处理成功!
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011167
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011167处理成功!
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011185
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011185处理成功!
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011194
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011194处理成功!
+[2018-01-05 10:53:14 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011209
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011209处理成功!
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011225
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011225处理成功!
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011288
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011288处理成功!
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011294
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011294处理成功!
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF17123131400000011308
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF17123131400000011308处理成功!
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011319
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011319处理成功!
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011416
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011416处理成功!
+[2018-01-05 10:53:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011430
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011430处理成功!
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011448
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011448处理成功!
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011455
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011455处理成功!
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011468
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011468处理成功!
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011484
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011484处理成功!
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011501
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011501处理成功!
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011507
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011507处理成功!
+[2018-01-05 10:53:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011605
+[2018-01-05 10:53:30 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011605处理成功!
+[2018-01-05 10:53:30 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011622
+[2018-01-05 10:53:51 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011622处理成功!
+[2018-01-05 10:53:51 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011641
+[2018-01-05 10:53:51 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011641处理成功!
+[2018-01-05 10:53:51 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011702
+[2018-01-05 10:53:51 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011702处理成功!
+[2018-01-05 10:53:51 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:256) - 读取互联互通卡属地清算中心接收数据中心下发的消费处理结果DF,DF18010131400000011722
+[2018-01-05 10:53:51 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:365) - 文件DF18010131400000011722处理成功!
+[2018-01-05 10:53:51 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:782) - 结束读取互联互通下发文件
+[2018-01-05 10:55:02 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始脱机数据处理...
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:202) - -------------------------------------------------------
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:203) - 开始读取互联互通下发文件
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:216) - 检查FTP配置信息
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:221) - host_download_path:/TransBase/Download/
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:226) - host_err_path:/TransBase/Error/
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:231) - host_repeat_path:/TransBase/Repeat/
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:236) - host_history_path:/TransBase/DownloadHis/
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1344) - host_ip:10.82.21.196
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1349) - host_port:21
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1354) - user_name:admin
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1359) - pwd:admin
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1365) - FTP连接正常
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1370) - FTP登录正常
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:242) - FTP目录切换正常
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:244) - 当前工作目录/TransBase/Download
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:245) - FTP检查完毕
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:250) - 检测到432个文件需要处理！
+[2018-01-05 11:05:46 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:782) - 结束读取互联互通下发文件
+[2018-01-05 11:06:05 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始脱机数据处理...
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:202) - -------------------------------------------------------
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:203) - 开始读取互联互通下发文件
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:216) - 检查FTP配置信息
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:221) - host_download_path:/TransBase/Download/
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:226) - host_err_path:/TransBase/Error/
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:231) - host_repeat_path:/TransBase/Repeat/
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:236) - host_history_path:/TransBase/DownloadHis/
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1344) - host_ip:10.82.21.196
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1349) - host_port:21
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1354) - user_name:admin
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1359) - pwd:admin
+[2018-01-05 11:14:59 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-05 11:15:00 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1365) - FTP连接正常
+[2018-01-05 11:15:00 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-05 11:15:00 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1370) - FTP登录正常
+[2018-01-05 11:15:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:242) - FTP目录切换正常
+[2018-01-05 11:15:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:244) - 当前工作目录/TransBase/Download
+[2018-01-05 11:15:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:245) - FTP检查完毕
+[2018-01-05 11:15:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:250) - 检测到432个文件需要处理！
+[2018-01-05 11:15:00 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:782) - 结束读取互联互通下发文件
+[2018-01-05 11:15:25 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始脱机数据处理...
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:202) - -------------------------------------------------------
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:203) - 开始读取互联互通下发文件
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:216) - 检查FTP配置信息
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:221) - host_download_path:/TransBase/Download/
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:226) - host_err_path:/TransBase/Error/
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:231) - host_repeat_path:/TransBase/Repeat/
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:236) - host_history_path:/TransBase/DownloadHis/
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1344) - host_ip:10.82.21.196
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1349) - host_port:21
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1354) - user_name:admin
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1359) - pwd:admin
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1365) - FTP连接正常
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1370) - FTP登录正常
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:242) - FTP目录切换正常
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:244) - 当前工作目录/TransBase/Download
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:245) - FTP检查完毕
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:250) - 检测到432个文件需要处理！
+[2018-01-05 11:17:41 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:782) - 结束读取互联互通下发文件
+[2018-01-05 11:18:00 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始上传拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-05 11:18:00 ERROR] [main] (com.erp.task.OfflineHlhtTask:224) - com.erp.exception.CommonException: 获取ftp配置出错，请联系系统管理员！
+[2018-01-05 11:18:00 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 脱机数据处理出现错误！获取ftp配置出错，请联系系统管理员！
+[2018-01-05 11:18:00 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-05 11:18:00 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - -----开始上传041010010010001GF文件-----
+[2018-01-05 11:18:00 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 嘉兴市民卡
+[2018-01-05 11:18:00 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - -----结束上传041010010010001GF文件-----
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - -----开始上传041010010010011GF文件-----
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 上传041010010010011GF文件出错：获取ftp配置出错，请联系系统管理员！
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.task.OfflineHlhtTask:263) - com.erp.exception.CommonException: 下发041010010010011GF文件出错：获取ftp配置出错，请联系系统管理员！
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 脱机数据处理出现错误！下发041010010010011GF文件出错：获取ftp配置出错，请联系系统管理员！
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传Gf文件...
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:54) - -------------------------------------------------------
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:55) - 写互联互通消费文件
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:64) - 检查FTP配置信息
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:69) - host_upload_path:/TransBase/Upload/
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1344) - host_ip:10.82.21.196
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1349) - host_port:21
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1354) - user_name:admin
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1359) - pwd:admin
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1365) - FTP连接正常
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1370) - FTP登录正常
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:75) - FTP目录切换正常
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:77) - 当前工作目录/TransBase/Upload
+[2018-01-05 11:18:10 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:78) - FTP检查完毕
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:179) - com.erp.exception.CommonException: 未找到需要上传的互联互通消费数据
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:190) - 结束上传互联互通消费文件
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.task.OfflineHlhtTask:156) - 上传上海FH文件有误:未找到需要上传的互联互通消费数据
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:54) - -------------------------------------------------------
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:55) - 写互联互通消费文件
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:64) - 检查FTP配置信息
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:69) - host_upload_path:/TransBase/Upload/
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1344) - host_ip:10.82.21.196
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1349) - host_port:21
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1354) - user_name:admin
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1359) - pwd:admin
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1365) - FTP连接正常
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.BaseServiceImpl:1370) - FTP登录正常
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:75) - FTP目录切换正常
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:77) - 当前工作目录/TransBase/Upload
+[2018-01-05 11:18:15 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:78) - FTP检查完毕
+[2018-01-05 11:18:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:179) - com.erp.exception.CommonException: 未找到需要上传的互联互通消费数据
+[2018-01-05 11:18:16 ERROR] [main] (com.erp.serviceImpl.UnionCardServiceImpl:190) - 结束上传互联互通消费文件
+[2018-01-05 11:18:16 ERROR] [main] (com.erp.task.OfflineHlhtTask:161) - 上传全国FH文件有误:未找到需要上传的互联互通消费数据
+[2018-01-08 11:30:43 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始处理嘉善停车收费离线数据文件...
+[2018-01-08 11:30:43 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-08 11:30:43 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-08 11:30:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - /upload/XF2018010406100102100101450001处理成功.
+[2018-01-08 11:30:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - /upload/XF2018010406100102100101450002处理成功.
+[2018-01-08 11:30:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束处理嘉善停车收费离线数据文件...
+[2018-01-08 11:30:44 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始验证消费数据TAC...
+[2018-01-08 11:30:48 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 文件XF2018010406100102100101450002,未获取到待验证TAC的记录.
+[2018-01-08 11:30:48 ERROR] [main] (com.erp.serviceImpl.OfflineDataProcessServiceImpl:345) - 文件XF2018010406100102100101450002,未获取到待验证TAC的记录.
+[2018-01-08 11:30:48 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 验证XF消费数据 XF2018010406100102100101450002TAC出现错误！文件XF2018010406100102100101450002,未获取到待验证TAC的记录.
+[2018-01-08 11:30:48 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束验证消费数据TAC...
+[2018-01-08 11:30:48 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始脱机数据处理...
+[2018-01-08 11:30:49 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束脱机数据处理...
+[2018-01-08 11:30:49 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 11:30:49 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-08 11:30:49 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-08 11:30:52 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 11:35:22 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始处理嘉善停车收费离线数据文件...
+[2018-01-08 11:35:22 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-08 11:35:22 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-08 11:35:23 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - /upload/XF2018010406100102100101450001处理成功.
+[2018-01-08 11:35:23 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - /upload/XF2018010406100102100101450002处理成功.
+[2018-01-08 11:35:23 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束处理嘉善停车收费离线数据文件...
+[2018-01-08 11:35:23 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始验证消费数据TAC...
+[2018-01-08 11:35:27 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 文件XF2018010406100102100101450002,未获取到待验证TAC的记录.
+[2018-01-08 11:35:27 ERROR] [main] (com.erp.serviceImpl.OfflineDataProcessServiceImpl:345) - 文件XF2018010406100102100101450002,未获取到待验证TAC的记录.
+[2018-01-08 11:35:27 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 验证XF消费数据 XF2018010406100102100101450002TAC出现错误！文件XF2018010406100102100101450002,未获取到待验证TAC的记录.
+[2018-01-08 11:35:27 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束验证消费数据TAC...
+[2018-01-08 11:35:27 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始脱机数据处理...
+[2018-01-08 11:35:27 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束脱机数据处理...
+[2018-01-08 11:35:27 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 11:35:27 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-08 11:35:27 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-08 11:35:28 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 15:28:05 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 15:28:06 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-08 15:28:06 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-08 15:28:08 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 15:53:58 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 15:54:14 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-08 15:54:16 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-08 15:54:54 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 16:00:34 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 16:00:34 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-08 16:00:34 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-08 16:01:31 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 16:05:36 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 16:10:07 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-08 16:10:08 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-08 16:10:09 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 16:10:56 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 开始上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...
+[2018-01-08 16:10:56 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP连接成功：220 Serv-U FTP Server v6.4 for WinSock ready...
+[2018-01-08 16:10:56 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - FTP登录成功：230 User logged in, proceed.
+[2018-01-08 16:10:57 ERROR] [main] (com.erp.task.DefaultFTPClient:438) - 结束上传嘉善拒付（SS）、清算(QS)、清算文件明细(NS)  文件...

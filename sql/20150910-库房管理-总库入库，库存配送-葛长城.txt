@@ -1,0 +1,20 @@
+
+
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='基础库房'), '总库入库', null, 1, 'totalStockMain', 'F', 'Y', 'closed', '/jsp/stockManage/totalStockMain.jsp', 'icon-merConsumeKind', 'A', null, to_date('10-09-2015 07:47:38', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-09-2015 07:47:38', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='基础库房'), '库存配送', null, 2, 'stockDelivery', 'F', 'Y', 'closed', '/jsp/stockManage/stockDelivery.jsp', 'icon-merSettleRate', 'A', null, to_date('10-09-2015 07:49:25', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-09-2015 07:49:25', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='基础库房'), '网点领用', null, 3, 'branchAccept', 'F', 'Y', 'closed', '/jsp/stockManage/branchAccept.jsp', 'icon-mersettlePara', 'A', null, to_date('10-09-2015 07:51:19', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-09-2015 07:51:19', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='总库入库'), '总库入库保存', null, 1, 'saveTotalStock', 'O', 'Y', 'open', 'javascript:void(0);', 'icon-save', 'A', null, to_date('10-09-2015 07:55:31', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-09-2015 07:55:31', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='库存配送'), '库存配送保存', null, 1, 'saveStockDelivery', 'O', 'Y', 'open', 'javascript:void(0);', 'icon-ok', 'A', null, to_date('10-09-2015 07:56:59', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-09-2015 07:56:59', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission WHERE NAME='网点领用'), '网点领用保存', null, 1, 'saveBranchAccept', 'O', 'Y', 'open', 'javascipt:void(0);', 'icon-ok', 'A', null, to_date('10-09-2015 07:58:51', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-09-2015 07:58:51', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);

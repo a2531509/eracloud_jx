@@ -1,0 +1,147 @@
+-- Create table
+create table BASE_PROVIDER
+(
+  provider_id       NUMBER(20),
+  provider_name     VARCHAR2(100),
+  provider_state    CHAR(1),
+  provider_contract VARCHAR2(100),
+  provider_type     CHAR(1),
+  provider_address  VARCHAR2(100),
+  provider_tel_no   VARCHAR2(20),
+  provider_linkman  VARCHAR2(20),
+  provider_post     VARCHAR2(20),
+  oper_date         DATE,
+  oper_id           VARCHAR2(10)
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table BASE_PROVIDER
+  is '供应商信息表';
+-- Add comments to the columns 
+comment on column BASE_PROVIDER.provider_id
+  is '序列号';
+comment on column BASE_PROVIDER.provider_name
+  is '供应商名称';
+comment on column BASE_PROVIDER.provider_state
+  is '状态0正常，1注销';
+comment on column BASE_PROVIDER.provider_contract
+  is '供应商合同时间段';
+comment on column BASE_PROVIDER.provider_type
+  is '类型1POS机具供应商，2读写卡机具供应商，3PSAM卡供应商';
+comment on column BASE_PROVIDER.provider_address
+  is '供应商的地址';
+comment on column BASE_PROVIDER.provider_tel_no
+  is '供应商的电话';
+comment on column BASE_PROVIDER.provider_linkman
+  is '供应商的联系人';
+comment on column BASE_PROVIDER.provider_post
+  is '供应商的邮编号';
+comment on column BASE_PROVIDER.oper_date
+  is '操作时间';
+comment on column BASE_PROVIDER.oper_id
+  is '操作人';
+
+
+
+
+
+
+
+-----------------------------------------
+
+
+
+-- Create table
+create table BASE_PASM
+(
+  psam_no           VARCHAR2(20) not null,
+  psam_id           VARCHAR2(32),
+  psam_end_no       VARCHAR2(32),
+  psam_issuse_date  VARCHAR2(10),
+  psam_valid_date   VARCHAR2(10),
+  psam_use          VARCHAR2(100),
+  psam_state        CHAR(1),
+  psam_brand        VARCHAR2(100),
+  psam_manufacturer VARCHAR2(100),
+  oper_date         DATE,
+  oper_id           VARCHAR2(10),
+  provider_id       NUMBER(20),
+  note              VARCHAR2(100)
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+-- Add comments to the table 
+comment on table BASE_PASM
+  is 'PASM卡信息表';
+-- Add comments to the columns 
+comment on column BASE_PASM.psam_no
+  is 'psam卡序列号';
+comment on column BASE_PASM.psam_id
+  is 'psam卡物理卡号';
+comment on column BASE_PASM.psam_end_no
+  is 'psam卡终端编号';
+comment on column BASE_PASM.psam_issuse_date
+  is '卡发行日期';
+comment on column BASE_PASM.psam_valid_date
+  is '卡有效日期';
+comment on column BASE_PASM.psam_use
+  is '卡片用途';
+comment on column BASE_PASM.psam_state
+  is '卡片状态0使用中，1注销';
+comment on column BASE_PASM.psam_brand
+  is '品牌分类';
+comment on column BASE_PASM.psam_manufacturer
+  is '生产厂家';
+comment on column BASE_PASM.oper_date
+  is '登记日期';
+comment on column BASE_PASM.oper_id
+  is '登记人';
+comment on column BASE_PASM.provider_id
+  is '供应商编号';
+comment on column BASE_PASM.note
+  is '备注';
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table BASE_PASM
+  add constraint PK_PSAM_PKS primary key (PSAM_NO)
+  using index 
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+
+
+
+
+
+
+  -- Create sequence 
+create sequence SEQ_BASIC_PROVIDER
+minvalue 1
+maxvalue 999999999999999999
+start with 1
+increment by 1
+cache 20
+order;

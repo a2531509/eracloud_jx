@@ -1,0 +1,14 @@
+-- Add/modify columns 
+alter table SYS_USERS add password_validity VARCHAR2(10);
+-- Add comments to the columns 
+comment on column SYS_USERS.password_validity
+  is '密码有效期';
+
+-- Add/modify columns 
+alter table SYS_LOGIN_LOG add login_erro VARCHAR2(100);
+-- Add comments to the columns 
+comment on column SYS_LOGIN_LOG.login_erro
+  is '登陆错误信息';
+
+update SYS_USERS set password_validity ='180';
+commit;

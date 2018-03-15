@@ -1,0 +1,1 @@
+update SYS_PERMISSION t set t.url='jsp/cardApp/applyStateQuery.jsp' where t.name = '申领情况查询';

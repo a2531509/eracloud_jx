@@ -1,0 +1,13 @@
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (select t.permission_id from SYS_PERMISSION t where t.name= '系统管理' and t.pid is null), '日志管理', null, 5, 'logManage', 'F', 'Y', 'closed', 'javascript:void(0);', 'icon-tip', 'A', null, to_date('10-09-2015', 'dd-mm-yyyy'), to_date('10-09-2015 17:29:34', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE s.NAME='日志管理' and rownum=1   ), '系统日志查询', null, 1, 'logsmain', 'F', 'Y', 'closed', '/jsp/logs/logsMain.jsp', 'icon-end', 'A', null, to_date('10-09-2015 17:30:56', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-09-2015 17:30:56', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE s.NAME='日志管理' and rownum=1   ), '错误日志查询', null, 2, 'errlog', 'F', 'Y', 'closed', '/jsp/logs/errLogs.jsp', 'icon-bdel', 'A', null, to_date('10-09-2015 17:33:27', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-09-2015 17:33:27', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+insert into SYS_PERMISSION (PERMISSION_ID, PID, NAME, PNAME, SORT, MYID, TYPE, ISUSED, STATE, URL, ICONCLS, STATUS, DESCRIPTION, CREATED, LASTMOD, CREATER, MODIFYER)
+values (seq_func_id.nextval, (SELECT PERMISSION_ID FROM Sys_Permission  s WHERE NAME='日志管理' and rownum=1  ), '操作日志查询', null, 3, 'operLogs', 'F', 'Y', 'closed', '/jsp/logs/operLogs.jsp', 'icon-badd', 'A', null, to_date('10-09-2015 17:34:27', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-09-2015 17:34:27', 'dd-mm-yyyy hh24:mi:ss'), 1, 1);
+
+commit;
